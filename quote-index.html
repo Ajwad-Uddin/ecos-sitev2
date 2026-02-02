@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Free Quote | IT Asset Disposal & Data Destruction | ECOS Technologies</title>
+    <meta name="description" content="Get a free quote for IT asset disposal and data destruction in 24 hours. R2v3 & ISO certified. Free pickup for qualifying equipment. See what your retired IT is worth.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blue-900: #0a1628;
+            --blue-800: #0f2440;
+            --blue-700: #1a365d;
+            --blue-600: #2563eb;
+            --blue-500: #3b82f6;
+            --blue-400: #60a5fa;
+            --green-500: #22c55e;
+            --green-400: #4ade80;
+            --orange-500: #f97316;
+            --orange-400: #fb923c;
+            --white: #ffffff;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--white);
+            color: var(--gray-800);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .mono { font-family: 'Space Mono', monospace; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* Top Bar */
+        .top-bar { background: var(--blue-900); color: var(--white); padding: 10px 0; font-size: 14px; }
+        .top-bar-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+        .top-bar a { color: var(--blue-400); text-decoration: none; transition: color 0.2s; }
+        .top-bar a:hover { color: var(--white); }
+        .cert-badges { display: flex; align-items: center; gap: 16px; font-size: 12px; letter-spacing: 0.5px; }
+        .cert-badge { display: flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 4px; font-weight: 500; }
+        .cert-badge svg { width: 14px; height: 14px; fill: var(--green-400); }
+
+        /* Header */
+        .header { background: var(--white); padding: 16px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { height: 48px; }
+        .nav { display: flex; align-items: center; gap: 32px; }
+        .nav-link { color: var(--gray-700); text-decoration: none; font-weight: 500; font-size: 15px; transition: color 0.2s; }
+        .nav-link:hover, .nav-link.active { color: var(--blue-600); }
+        .nav-cta { background: var(--blue-600); color: var(--white); padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: all 0.2s; }
+        .nav-cta:hover { background: var(--blue-700); transform: translateY(-1px); }
+        .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+        .mobile-menu-btn svg { width: 28px; height: 28px; stroke: var(--gray-700); }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--blue-900) 0%, var(--blue-800) 50%, var(--blue-700) 100%);
+            color: var(--white);
+            padding: 60px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+        .hero-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 60px; align-items: start; position: relative; z-index: 1; }
+        .hero-content { padding-top: 20px; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(34, 197, 94, 0.15); border: 1px solid rgba(34, 197, 94, 0.3); color: var(--green-400); padding: 8px 16px; border-radius: 50px; font-size: 14px; font-weight: 600; margin-bottom: 24px; }
+        .hero-badge svg { width: 18px; height: 18px; fill: currentColor; }
+        .hero h1 { font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 700; line-height: 1.15; margin-bottom: 20px; }
+        .hero-subtitle { font-size: 1.15rem; color: var(--gray-300); margin-bottom: 32px; }
+        .hero-benefits { list-style: none; margin-bottom: 32px; }
+        .hero-benefits li { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; font-size: 1rem; color: var(--gray-200); }
+        .hero-benefits svg { width: 24px; height: 24px; fill: var(--green-400); flex-shrink: 0; }
+        .hero-trust { display: flex; align-items: center; gap: 24px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .hero-trust-item { display: flex; align-items: center; gap: 8px; font-size: 0.875rem; color: var(--gray-400); }
+        .hero-trust-item svg { width: 20px; height: 20px; fill: var(--green-400); }
+
+        /* Form Container */
+        .form-container { background: var(--white); border-radius: 20px; padding: 40px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); }
+        .form-header { text-align: center; margin-bottom: 32px; }
+        .form-header h2 { color: var(--gray-900); font-size: 1.5rem; font-weight: 700; margin-bottom: 8px; }
+        .form-header p { color: var(--gray-500); font-size: 0.95rem; }
+
+        /* Progress Bar */
+        .progress-bar { display: flex; justify-content: space-between; margin-bottom: 32px; position: relative; }
+        .progress-bar::before { content: ''; position: absolute; top: 16px; left: 40px; right: 40px; height: 3px; background: var(--gray-200); z-index: 0; }
+        .progress-step { display: flex; flex-direction: column; align-items: center; position: relative; z-index: 1; }
+        .progress-number { width: 36px; height: 36px; border-radius: 50%; background: var(--gray-200); color: var(--gray-500); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.95rem; margin-bottom: 8px; transition: all 0.3s; }
+        .progress-step.active .progress-number { background: var(--blue-600); color: var(--white); }
+        .progress-step.completed .progress-number { background: var(--green-500); color: var(--white); }
+        .progress-label { font-size: 0.75rem; color: var(--gray-500); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+        .progress-step.active .progress-label { color: var(--blue-600); }
+
+        /* Form Steps */
+        .form-step { display: none; }
+        .form-step.active { display: block; animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .step-title { font-size: 1.1rem; font-weight: 600; color: var(--gray-900); margin-bottom: 20px; text-align: center; }
+
+        /* Equipment Type Buttons */
+        .equipment-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 24px; }
+        .equipment-btn { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 20px 16px; border: 2px solid var(--gray-200); border-radius: 12px; background: var(--white); cursor: pointer; transition: all 0.2s; }
+        .equipment-btn:hover { border-color: var(--blue-400); background: #eff6ff; }
+        .equipment-btn.selected { border-color: var(--blue-600); background: #eff6ff; }
+        .equipment-btn svg { width: 32px; height: 32px; fill: var(--gray-600); }
+        .equipment-btn.selected svg { fill: var(--blue-600); }
+        .equipment-btn span { font-size: 0.9rem; font-weight: 500; color: var(--gray-700); }
+        .equipment-btn input { display: none; }
+
+        /* Quantity Buttons */
+        .quantity-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 24px; }
+        .quantity-btn { padding: 18px 16px; border: 2px solid var(--gray-200); border-radius: 12px; background: var(--white); cursor: pointer; transition: all 0.2s; text-align: center; }
+        .quantity-btn:hover { border-color: var(--blue-400); }
+        .quantity-btn.selected { border-color: var(--blue-600); background: #eff6ff; }
+        .quantity-btn .number { font-size: 1.25rem; font-weight: 700; color: var(--gray-900); display: block; margin-bottom: 4px; }
+        .quantity-btn .label { font-size: 0.8rem; color: var(--gray-500); }
+        .quantity-btn input { display: none; }
+
+        /* Form Inputs */
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-size: 0.9rem; font-weight: 600; color: var(--gray-700); margin-bottom: 8px; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 14px 16px; border: 2px solid var(--gray-200); border-radius: 10px; font-size: 1rem; font-family: inherit; transition: all 0.2s; }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--blue-500); box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); }
+        .form-group input::placeholder { color: var(--gray-400); }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+        /* Buttons */
+        .btn-group { display: flex; gap: 12px; margin-top: 24px; }
+        .btn-back { flex: 1; padding: 16px 24px; border: 2px solid var(--gray-200); border-radius: 10px; background: var(--white); color: var(--gray-600); font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+        .btn-back:hover { border-color: var(--gray-300); background: var(--gray-50); }
+        .btn-next, .btn-submit { flex: 2; padding: 16px 24px; border: none; border-radius: 10px; background: var(--blue-600); color: var(--white); font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+        .btn-next:hover, .btn-submit:hover { background: var(--blue-700); transform: translateY(-1px); }
+        .btn-submit { background: var(--green-500); }
+        .btn-submit:hover { background: var(--green-400); }
+        .btn-next:disabled, .btn-submit:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+        /* Form Footer */
+        .form-footer { text-align: center; margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--gray-100); }
+        .form-footer p { font-size: 0.85rem; color: var(--gray-500); }
+        .form-footer svg { width: 16px; height: 16px; fill: var(--green-500); vertical-align: middle; margin-right: 6px; }
+
+        /* Success State */
+        .form-success { display: none; text-align: center; padding: 40px 20px; }
+        .form-success.active { display: block; }
+        .success-icon { width: 80px; height: 80px; background: linear-gradient(135deg, var(--green-500) 0%, var(--green-400) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; }
+        .success-icon svg { width: 40px; height: 40px; fill: var(--white); }
+        .form-success h2 { color: var(--gray-900); font-size: 1.5rem; margin-bottom: 12px; }
+        .form-success p { color: var(--gray-600); margin-bottom: 24px; }
+        .success-details { background: var(--gray-50); border-radius: 12px; padding: 20px; text-align: left; }
+        .success-details h4 { font-size: 0.9rem; color: var(--gray-700); margin-bottom: 12px; }
+        .success-details ul { list-style: none; }
+        .success-details li { display: flex; align-items: center; gap: 10px; padding: 8px 0; color: var(--gray-600); font-size: 0.9rem; }
+        .success-details svg { width: 18px; height: 18px; fill: var(--green-500); }
+
+        /* Trust Section */
+        .trust-section { padding: 80px 0; background: var(--gray-50); }
+        .trust-header { text-align: center; margin-bottom: 48px; }
+        .trust-header h2 { font-size: 1.75rem; font-weight: 700; color: var(--gray-900); margin-bottom: 12px; }
+        .trust-header p { color: var(--gray-600); font-size: 1.05rem; }
+        .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+        .trust-card { background: var(--white); border-radius: 16px; padding: 32px 24px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .trust-icon { width: 56px; height: 56px; background: linear-gradient(135deg, var(--blue-600) 0%, var(--blue-500) 100%); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+        .trust-icon svg { width: 28px; height: 28px; fill: var(--white); }
+        .trust-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--gray-900); margin-bottom: 8px; }
+        .trust-card p { color: var(--gray-600); font-size: 0.9rem; line-height: 1.5; }
+
+        /* Process Section */
+        .process-section { padding: 80px 0; background: var(--white); }
+        .process-header { text-align: center; margin-bottom: 48px; }
+        .process-header h2 { font-size: 1.75rem; font-weight: 700; color: var(--gray-900); margin-bottom: 12px; }
+        .process-header p { color: var(--gray-600); font-size: 1.05rem; }
+        .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+        .process-step-card { text-align: center; position: relative; }
+        .process-step-card::after { content: ''; position: absolute; top: 28px; right: -12px; width: 24px; height: 2px; background: var(--gray-200); }
+        .process-step-card:last-child::after { display: none; }
+        .process-step-number { width: 56px; height: 56px; background: var(--blue-600); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Space Mono', monospace; font-size: 1.25rem; font-weight: 700; margin: 0 auto 16px; }
+        .process-step-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--gray-900); margin-bottom: 8px; }
+        .process-step-card p { color: var(--gray-600); font-size: 0.9rem; line-height: 1.5; }
+
+        /* FAQ Section */
+        .faq-section { padding: 80px 0; background: var(--gray-50); }
+        .faq-header { text-align: center; margin-bottom: 48px; }
+        .faq-header h2 { font-size: 1.75rem; font-weight: 700; color: var(--gray-900); margin-bottom: 12px; }
+        .faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; }
+        .faq-item { background: var(--white); border-radius: 12px; padding: 24px; }
+        .faq-item h4 { font-size: 1rem; font-weight: 700; color: var(--gray-900); margin-bottom: 12px; }
+        .faq-item p { color: var(--gray-600); font-size: 0.95rem; line-height: 1.6; }
+
+        /* Contact Alt Section */
+        .contact-alt { padding: 60px 0; background: var(--blue-900); text-align: center; }
+        .contact-alt h2 { color: var(--white); font-size: 1.5rem; font-weight: 700; margin-bottom: 12px; }
+        .contact-alt p { color: var(--gray-400); margin-bottom: 24px; }
+        .contact-options { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; }
+        .contact-option { display: flex; align-items: center; gap: 12px; color: var(--white); text-decoration: none; font-size: 1.1rem; font-weight: 500; transition: color 0.2s; }
+        .contact-option:hover { color: var(--blue-400); }
+        .contact-option svg { width: 24px; height: 24px; fill: var(--blue-400); }
+
+        /* Footer */
+        .footer { background: var(--gray-900); color: var(--gray-400); padding: 60px 0 30px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 48px; margin-bottom: 48px; }
+        .footer-brand p { margin-top: 16px; font-size: 14px; line-height: 1.7; }
+        .footer-certs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+        .footer-cert-badge { background: rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 4px; font-size: 11px; font-weight: 500; }
+        .footer h5 { color: var(--white); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 20px; }
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a { color: var(--gray-400); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--white); }
+        .footer-contact-item { display: flex; gap: 12px; margin-bottom: 16px; font-size: 14px; }
+        .footer-contact-item svg { width: 18px; height: 18px; fill: var(--gray-500); flex-shrink: 0; margin-top: 2px; }
+        .footer-contact-item a { color: var(--gray-400); text-decoration: none; }
+        .footer-contact-item a:hover { color: var(--white); }
+        .footer-bottom { border-top: 1px solid var(--gray-800); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
+        .footer-bottom a { color: var(--gray-400); text-decoration: none; }
+        .footer-bottom a:hover { color: var(--white); }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+            .hero-content { text-align: center; padding-top: 0; }
+            .hero-benefits { display: inline-block; text-align: left; }
+            .hero-trust { justify-content: center; }
+            .trust-grid, .process-steps { grid-template-columns: repeat(2, 1fr); }
+            .process-step-card::after { display: none; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .top-bar-content { justify-content: center; text-align: center; }
+            .cert-badges { display: none; }
+            .nav { display: none; }
+            .mobile-menu-btn { display: block; }
+            .hero { padding: 40px 0 60px; }
+            .form-container { padding: 28px 20px; }
+            .equipment-grid, .quantity-grid { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .trust-grid, .process-steps, .faq-grid { grid-template-columns: 1fr; }
+            .contact-options { flex-direction: column; align-items: center; }
+            .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+            .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+            .hero-trust { flex-direction: column; gap: 12px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div>Call <a href="tel:4045006057">(404) 500-6057</a> · <a href="/cdn-cgi/l/email-protection#b5c6d4d9d0c6f5d0d6dac6c7d0d6ccd6d9d0c69bd6dad8"><span class="__cf_email__" data-cfemail="4b382a272e380b2e282438392e283228272e3865282426">[email&#160;protected]</span></a></div>
+                <div class="cert-badges">
+                    <span class="cert-badge"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>R2v3 Certified</span>
+                    <span class="cert-badge"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>ISO 9001 | 14001 | 45001</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/"><img src="https://github.com/Ajwad-Uddin/ecos-site/blob/main/LogoColor1.png?raw=true" alt="ECOS Technologies" class="logo"></a>
+                <nav class="nav">
+                    <a href="/services" class="nav-link">Services</a>
+                    <a href="/industries" class="nav-link">Industries</a>
+                    <a href="/how-it-works" class="nav-link">How It Works</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/quote" class="nav-cta active">Get Free Quote</a>
+                </nav>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero with Form -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        Quote Delivered Within 24 Hours
+                    </div>
+                    <h1>Turn Your Retired IT Equipment Into Cash—Or Dispose of It Responsibly</h1>
+                    <p class="hero-subtitle">Tell us what you have. We'll tell you what it's worth and handle everything from pickup to certified data destruction.</p>
+                    
+                    <ul class="hero-benefits">
+                        <li><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>Free pickup for qualifying equipment</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>Certificate of Destruction included</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>HIPAA, NIST, SOX, FERPA compliant</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>Revenue share on valuable equipment</li>
+                    </ul>
+
+                    <div class="hero-trust">
+                        <div class="hero-trust-item"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>R2v3 + ISO Certified</div>
+                        <div class="hero-trust-item"><svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10z"/></svg>Fortune 500 Trusted</div>
+                        <div class="hero-trust-item"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg>100% Domestic</div>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>Get Your Free Quote</h2>
+                        <p>No obligation. No pressure. Just honest pricing.</p>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-step active" data-step="1"><div class="progress-number">1</div><span class="progress-label">Equipment</span></div>
+                        <div class="progress-step" data-step="2"><div class="progress-number">2</div><span class="progress-label">Details</span></div>
+                        <div class="progress-step" data-step="3"><div class="progress-number">3</div><span class="progress-label">Contact</span></div>
+                    </div>
+
+                    <form id="quoteForm" action="https://formspree.io/f/mvgvjqaq" method="POST">
+                        <!-- Step 1: Equipment Type -->
+                        <div class="form-step active" data-step="1">
+                            <p class="step-title">What type of IT equipment do you need to dispose of?</p>
+                            <div class="equipment-grid">
+                                <label class="equipment-btn"><input type="checkbox" name="equipment[]" value="Laptops/Desktops"><svg viewBox="0 0 24 24"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg><span>Laptops / Desktops</span></label>
+                                <label class="equipment-btn"><input type="checkbox" name="equipment[]" value="Servers"><svg viewBox="0 0 24 24"><path d="M2 17h20v2H2v-2zm11.84-9.21c.1-.24.16-.51.16-.79 0-1.1-.9-2-2-2s-2 .9-2 2c0 .28.06.55.16.79C6.25 8.6 3.27 11.93 3 16h18c-.27-4.07-3.25-7.4-7.16-8.21z"/></svg><span>Servers</span></label>
+                                <label class="equipment-btn"><input type="checkbox" name="equipment[]" value="Network Equipment"><svg viewBox="0 0 24 24"><path d="M4.93 4.93l1.41 1.41a9.97 9.97 0 0 1 7.66-2.16V1.1A11.95 11.95 0 0 0 4.93 4.93zm7.07 3.07a3 3 0 0 0 0 6 3 3 0 0 0 0-6zm8.07-3.07A11.95 11.95 0 0 0 14 1.1v3.08a9.97 9.97 0 0 1 4.59 2.34l1.41-1.41zM1.1 14a11.95 11.95 0 0 0 3.83 5.07l1.41-1.41A9.97 9.97 0 0 1 4.18 14H1.1zm18.72 0a9.97 9.97 0 0 1-2.16 3.66l1.41 1.41A11.95 11.95 0 0 0 22.9 14h-3.08zm-8.82 9.9a11.95 11.95 0 0 0 5.07-3.83l-1.41-1.41a9.97 9.97 0 0 1-3.66 2.16v3.08zM4.93 19.07A11.95 11.95 0 0 0 11 22.9v-3.08a9.97 9.97 0 0 1-4.66-2.16l-1.41 1.41z"/></svg><span>Network Equipment</span></label>
+                                <label class="equipment-btn"><input type="checkbox" name="equipment[]" value="Mobile Devices"><svg viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg><span>Mobile Devices</span></label>
+                                <label class="equipment-btn"><input type="checkbox" name="equipment[]" value="Monitors/Displays"><svg viewBox="0 0 24 24"><path d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"/></svg><span>Monitors / Displays</span></label>
+                                <label class="equipment-btn"><input type="checkbox" name="equipment[]" value="Other/Mixed"><svg viewBox="0 0 24 24"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg><span>Other / Mixed</span></label>
+                            </div>
+                            <div class="btn-group"><button type="button" class="btn-next" id="toStep2" disabled>Continue</button></div>
+                        </div>
+
+                        <!-- Step 2: Quantity & Location -->
+                        <div class="form-step" data-step="2">
+                            <p class="step-title">How many units and where are they located?</p>
+                            <div class="form-group">
+                                <label>Approximate Quantity</label>
+                                <div class="quantity-grid">
+                                    <label class="quantity-btn"><input type="radio" name="quantity" value="1-50" required><span class="number">1-50</span><span class="label">units</span></label>
+                                    <label class="quantity-btn"><input type="radio" name="quantity" value="51-200"><span class="number">51-200</span><span class="label">units</span></label>
+                                    <label class="quantity-btn"><input type="radio" name="quantity" value="201-500"><span class="number">201-500</span><span class="label">units</span></label>
+                                    <label class="quantity-btn"><input type="radio" name="quantity" value="500+"><span class="number">500+</span><span class="label">units</span></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Where is the equipment located?</label>
+                                <select id="location" name="location" required>
+                                    <option value="">Select state or region...</option>
+                                    <option value="Georgia">Georgia</option>
+                                    <option value="Florida">Florida</option>
+                                    <option value="Alabama">Alabama</option>
+                                    <option value="Tennessee">Tennessee</option>
+                                    <option value="South Carolina">South Carolina</option>
+                                    <option value="North Carolina">North Carolina</option>
+                                    <option value="Other Southeast">Other Southeast</option>
+                                    <option value="Northeast">Northeast</option>
+                                    <option value="Midwest">Midwest</option>
+                                    <option value="Southwest">Southwest</option>
+                                    <option value="West Coast">West Coast</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="timeline">When do you need this handled?</label>
+                                <select id="timeline" name="timeline" required>
+                                    <option value="">Select timeline...</option>
+                                    <option value="ASAP">ASAP - As soon as possible</option>
+                                    <option value="Within 2 weeks">Within 2 weeks</option>
+                                    <option value="Within 1 month">Within 1 month</option>
+                                    <option value="Within 3 months">Within 3 months</option>
+                                    <option value="Just exploring">Just exploring options</option>
+                                </select>
+                            </div>
+                            <div class="btn-group">
+                                <button type="button" class="btn-back" id="backToStep1">Back</button>
+                                <button type="button" class="btn-next" id="toStep3" disabled>Continue</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Contact Info -->
+                        <div class="form-step" data-step="3">
+                            <p class="step-title">Where should we send your quote?</p>
+                            <div class="form-row">
+                                <div class="form-group"><label for="firstName">First Name</label><input type="text" id="firstName" name="firstName" required placeholder="John"></div>
+                                <div class="form-group"><label for="lastName">Last Name</label><input type="text" id="lastName" name="lastName" required placeholder="Smith"></div>
+                            </div>
+                            <div class="form-group"><label for="email">Business Email</label><input type="email" id="email" name="email" required placeholder="john@company.com"></div>
+                            <div class="form-group"><label for="company">Company Name</label><input type="text" id="company" name="company" required placeholder="Acme Corporation"></div>
+                            <div class="form-group"><label for="phone">Phone (Optional)</label><input type="tel" id="phone" name="phone" placeholder="(555) 123-4567"></div>
+                            <div class="form-group"><label for="notes">Anything else we should know? (Optional)</label><textarea id="notes" name="notes" rows="3" placeholder="Equipment condition, special requirements, compliance needs..."></textarea></div>
+                            <div class="btn-group">
+                                <button type="button" class="btn-back" id="backToStep2">Back</button>
+                                <button type="submit" class="btn-submit">Get My Free Quote</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
+                        <h2>Quote Request Received!</h2>
+                        <p>We'll review your information and send a detailed quote within 24 hours.</p>
+                        <div class="success-details">
+                            <h4>What happens next:</h4>
+                            <ul>
+                                <li><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>We'll assess your equipment and calculate value</li>
+                                <li><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>You'll receive a no-obligation quote via email</li>
+                                <li><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>If you approve, we schedule pickup at your convenience</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="form-footer"><p><svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>Your information is secure and never shared.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-header">
+                <h2>Why 500+ Organizations Trust ECOS</h2>
+                <p>We're in the top 6% of ITAD providers nationally. Here's what that means for you.</p>
+            </div>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg></div>
+                    <h3>R2v3 + ISO Certified</h3>
+                    <p>Independently audited annually. Meets the standards 94% of ITAD providers can't.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></div>
+                    <h3>Complete Documentation</h3>
+                    <p>Serial-level tracking, Certificate of Destruction, and chain of custody records.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></div>
+                    <h3>100% Domestic</h3>
+                    <p>Your equipment never leaves US soil. Processed right here in Georgia.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg></div>
+                    <h3>Value Recovery</h3>
+                    <p>We pay you for valuable equipment instead of charging disposal fees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="process-header">
+                <h2>What Happens After You Submit</h2>
+                <p>A simple, transparent process from quote to completion.</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step-card"><div class="process-step-number">1</div><h3>We Review</h3><p>Our team assesses your equipment type, quantity, and location to calculate value and logistics.</p></div>
+                <div class="process-step-card"><div class="process-step-number">2</div><h3>You Get a Quote</h3><p>Within 24 hours, you receive a detailed, no-obligation quote via email.</p></div>
+                <div class="process-step-card"><div class="process-step-number">3</div><h3>We Pick Up</h3><p>Approve the quote and we schedule pickup with our uniformed, background-checked team.</p></div>
+                <div class="process-step-card"><div class="process-step-number">4</div><h3>You Get Paid</h3><p>Receive your Certificate of Destruction and payment for valuable equipment.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-header"><h2>Common Questions</h2></div>
+            <div class="faq-grid">
+                <div class="faq-item"><h4>Is pickup really free?</h4><p>Yes, for qualifying equipment volumes (typically 20+ units). For smaller quantities, we offer affordable pickup options or you can drop off at our Tucker, GA facility.</p></div>
+                <div class="faq-item"><h4>How is data destroyed?</h4><p>We use NIST 800-88 compliant methods including DoD-level data wiping and physical destruction (shredding). You choose the method based on your security requirements.</p></div>
+                <div class="faq-item"><h4>What documentation do I receive?</h4><p>You receive a serialized Certificate of Destruction listing every asset by serial number, plus chain of custody documentation and recycling reports.</p></div>
+                <div class="faq-item"><h4>Do you handle compliance requirements?</h4><p>Yes. We're experienced with HIPAA, SOX, GLBA, FERPA, and NIST requirements. We can sign Business Associate Agreements and provide all required documentation.</p></div>
+                <div class="faq-item"><h4>What if my equipment has no resale value?</h4><p>We still handle it responsibly with our zero-landfill commitment. Mixed loads with valuable equipment often offset disposal costs entirely.</p></div>
+                <div class="faq-item"><h4>How long does the process take?</h4><p>Quote within 24 hours. Pickup scheduled at your convenience (often within 1-2 weeks). Certificate of Destruction typically delivered within 5-7 business days of pickup.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Alt -->
+    <section class="contact-alt">
+        <div class="container">
+            <h2>Prefer to Talk to Someone Directly?</h2>
+            <p>Our team is ready to answer your questions and provide a custom quote.</p>
+            <div class="contact-options">
+                <a href="tel:4045006057" class="contact-option"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>(404) 500-6057</a>
+                <a href="/cdn-cgi/l/email-protection#0b786a676e784b6e686478796e687268676e7825686466" class="contact-option"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><span class="__cf_email__" data-cfemail="9eedfff2fbeddefbfdf1edecfbfde7fdf2fbedb0fdf1f3">[email&#160;protected]</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="https://github.com/Ajwad-Uddin/ecos-site/blob/main/LogoWhite1.png?raw=true" alt="ECOS Technologies" style="height: 40px;">
+                    <p>ECOS Technologies provides certified IT asset disposition, data destruction, and electronics recycling services nationwide. R2v3 and ISO certified—in the top 6% of ITAD providers nationally.</p>
+                    <div class="footer-certs">
+                        <span class="footer-cert-badge">R2v3 Certified</span>
+                        <span class="footer-cert-badge">ISO 9001</span>
+                        <span class="footer-cert-badge">ISO 14001</span>
+                        <span class="footer-cert-badge">ISO 45001</span>
+                    </div>
+                </div>
+                <div>
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="/services#itad">IT Asset Disposition</a></li>
+                        <li><a href="/services#data-destruction">Data Destruction</a></li>
+                        <li><a href="/services#recycling">Electronics Recycling</a></li>
+                        <li><a href="/services#decommissioning">Data Center Decommissioning</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/industries">Industries</a></li>
+                        <li><a href="/how-it-works">How It Works</a></li>
+                        <li><a href="/quote">Get a Quote</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Contact</h5>
+                    <div class="footer-contact-item"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg><span>4761 Hugh Howell Road<br>Tucker, GA 30084</span></div>
+                    <div class="footer-contact-item"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>(404) 500-6057</span></div>
+                    <div class="footer-contact-item"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><span><a href="/cdn-cgi/l/email-protection#0f7c6e636a7c4f6a6c607c7d6a6c766c636a7c216c6062"><span class="__cf_email__" data-cfemail="dba8bab7bea89bbeb8b4a8a9beb8a2b8b7bea8f5b8b4b6">[email&#160;protected]</span></a></span></div>
+                    <div class="footer-contact-item"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg><span>Mon–Fri: 9am–5pm EST</span></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 ECOS Technologies. All rights reserved.</span>
+                <div><a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        const form = document.getElementById('quoteForm');
+        const steps = document.querySelectorAll('.form-step');
+        const progressSteps = document.querySelectorAll('.progress-step');
+        const formSuccess = document.getElementById('formSuccess');
+        let currentStep = 1;
+
+        // Equipment selection
+        const equipmentBtns = document.querySelectorAll('.equipment-btn');
+        const toStep2Btn = document.getElementById('toStep2');
+        equipmentBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.classList.toggle('selected');
+                toStep2Btn.disabled = document.querySelectorAll('.equipment-btn.selected').length === 0;
+            });
+        });
+
+        // Quantity selection
+        const quantityBtns = document.querySelectorAll('.quantity-btn');
+        const toStep3Btn = document.getElementById('toStep3');
+        quantityBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                quantityBtns.forEach(b => b.classList.remove('selected'));
+                this.classList.add('selected');
+                this.querySelector('input').checked = true;
+                checkStep2Validity();
+            });
+        });
+
+        const locationSelect = document.getElementById('location');
+        const timelineSelect = document.getElementById('timeline');
+        function checkStep2Validity() {
+            const quantitySelected = document.querySelector('.quantity-btn.selected');
+            toStep3Btn.disabled = !(quantitySelected && locationSelect.value && timelineSelect.value);
+        }
+        locationSelect.addEventListener('change', checkStep2Validity);
+        timelineSelect.addEventListener('change', checkStep2Validity);
+
+        function goToStep(step) {
+            currentStep = step;
+            steps.forEach(s => s.classList.remove('active'));
+            document.querySelector(`.form-step[data-step="${step}"]`).classList.add('active');
+            progressSteps.forEach(p => {
+                const pStep = parseInt(p.dataset.step);
+                p.classList.remove('active', 'completed');
+                if (pStep === step) p.classList.add('active');
+                else if (pStep < step) p.classList.add('completed');
+            });
+        }
+
+        document.getElementById('toStep2').addEventListener('click', () => goToStep(2));
+        document.getElementById('toStep3').addEventListener('click', () => goToStep(3));
+        document.getElementById('backToStep1').addEventListener('click', () => goToStep(1));
+        document.getElementById('backToStep2').addEventListener('click', () => goToStep(2));
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const submitBtn = form.querySelector('.btn-submit');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            try {
+                const response = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+                if (response.ok) {
+                    form.style.di

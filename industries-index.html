@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITAD Services by Industry | Healthcare, Financial, Education, Government | ECOS Technologies</title>
+    <meta name="description" content="Industry-specific IT asset disposition. HIPAA compliant healthcare ITAD. SOX/GLBA financial services. FERPA education recycling. NIST 800-88 government disposal. R2v3 certified.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blue-900: #0a1628;
+            --blue-800: #0f2440;
+            --blue-700: #1a365d;
+            --blue-600: #2563eb;
+            --blue-500: #3b82f6;
+            --blue-400: #60a5fa;
+            --green-500: #22c55e;
+            --green-400: #4ade80;
+            --orange-500: #f97316;
+            --orange-400: #fb923c;
+            --red-500: #ef4444;
+            --red-600: #dc2626;
+            --white: #ffffff;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--white);
+            color: var(--gray-800);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: var(--blue-900);
+            color: var(--white);
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .top-bar a {
+            color: var(--blue-400);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .top-bar a:hover {
+            color: var(--white);
+        }
+
+        .cert-badges {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .cert-badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.1);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .cert-badge svg {
+            width: 14px;
+            height: 14px;
+            fill: var(--green-400);
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 48px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-link {
+            color: var(--gray-700);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--blue-600);
+        }
+
+        .nav-cta {
+            background: var(--blue-600);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .nav-cta:hover {
+            background: var(--blue-700);
+            transform: translateY(-1px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-menu-btn svg {
+            width: 28px;
+            height: 28px;
+            stroke: var(--gray-700);
+        }
+
+        /* Page Hero */
+        .page-hero {
+            background: linear-gradient(135deg, var(--blue-900) 0%, var(--blue-800) 50%, var(--blue-700) 100%);
+            color: var(--white);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .page-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .page-hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .page-hero p {
+            font-size: 20px;
+            color: var(--gray-300);
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        .hero-cta-row {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--white);
+            color: var(--blue-700);
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            padding: 14px 28px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--white);
+            background: rgba(255,255,255,0.1);
+        }
+
+        /* Industry Navigation */
+        .industry-nav {
+            background: var(--gray-50);
+            border-bottom: 1px solid var(--gray-200);
+            padding: 20px 0;
+            position: sticky;
+            top: 80px;
+            z-index: 100;
+        }
+
+        .industry-nav-content {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .industry-nav-link {
+            padding: 10px 20px;
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 6px;
+            color: var(--gray-600);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .industry-nav-link:hover,
+        .industry-nav-link.active {
+            background: var(--blue-600);
+            border-color: var(--blue-600);
+            color: var(--white);
+        }
+
+        /* Warning Banner */
+        .warning-banner {
+            background: linear-gradient(90deg, var(--red-600), var(--red-500));
+            color: var(--white);
+            padding: 16px 0;
+            text-align: center;
+        }
+
+        .warning-banner-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .warning-banner svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--white);
+        }
+
+        .warning-banner strong {
+            font-size: 16px;
+        }
+
+        .warning-banner span {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* Industry Section */
+        .industry-section {
+            padding: 100px 0;
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        .industry-section:nth-child(even) {
+            background: var(--gray-50);
+        }
+
+        .industry-section:last-of-type {
+            border-bottom: none;
+        }
+
+        .industry-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .industry-grid.reverse {
+            direction: rtl;
+        }
+
+        .industry-grid.reverse > * {
+            direction: ltr;
+        }
+
+        .industry-content {
+            max-width: 560px;
+        }
+
+        .industry-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--blue-600);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .industry-label svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--blue-600);
+        }
+
+        .industry-content h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .industry-content > p {
+            font-size: 18px;
+            color: var(--gray-600);
+            margin-bottom: 28px;
+            line-height: 1.7;
+        }
+
+        /* Compliance Alert Box */
+        .compliance-alert {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(239, 68, 68, 0.04));
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-left: 4px solid var(--red-500);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 28px;
+        }
+
+        .compliance-alert-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .compliance-alert-header svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--red-500);
+        }
+
+        .compliance-alert-header strong {
+            color: var(--red-600);
+            font-size: 14px;
+        }
+
+        .compliance-alert p {
+            font-size: 14px;
+            color: var(--gray-700);
+            margin: 0;
+        }
+
+        /* Requirements List */
+        .requirements-list {
+            list-style: none;
+            margin-bottom: 28px;
+        }
+
+        .requirements-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--gray-100);
+            font-size: 15px;
+            color: var(--gray-700);
+        }
+
+        .requirements-list li:last-child {
+            border-bottom: none;
+        }
+
+        .requirements-list li svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--green-500);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .requirements-list li strong {
+            color: var(--gray-900);
+        }
+
+        /* Industry CTA */
+        .industry-cta {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .industry-cta-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--blue-600);
+            color: var(--white);
+            padding: 14px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.2s;
+        }
+
+        .industry-cta-primary:hover {
+            background: var(--blue-700);
+            transform: translateY(-1px);
+        }
+
+        .industry-cta-primary svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        .industry-cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--blue-600);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.2s;
+        }
+
+        .industry-cta-secondary:hover {
+            color: var(--blue-700);
+            gap: 12px;
+        }
+
+        .industry-cta-secondary svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        /* Industry Visual Card */
+        .industry-visual {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        .industry-visual-header {
+            background: linear-gradient(135deg, var(--blue-600), var(--blue-700));
+            color: var(--white);
+            padding: 24px;
+        }
+
+        .industry-visual-header h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .industry-visual-header p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .industry-stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1px;
+            background: var(--gray-200);
+        }
+
+        .industry-stat {
+            background: var(--white);
+            padding: 24px;
+            text-align: center;
+        }
+
+        .industry-stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--blue-600);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .industry-stat-label {
+            font-size: 13px;
+            color: var(--gray-500);
+        }
+
+        .industry-compliance-tags {
+            padding: 20px 24px;
+            background: var(--gray-50);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .compliance-tag {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--gray-700);
+        }
+
+        .compliance-tag.required {
+            background: var(--blue-600);
+            border-color: var(--blue-600);
+            color: var(--white);
+        }
+
+        /* Volume Callout */
+        .volume-callout {
+            background: linear-gradient(135deg, var(--green-500), #16a34a);
+            color: var(--white);
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .volume-callout svg {
+            width: 32px;
+            height: 32px;
+            fill: var(--white);
+            flex-shrink: 0;
+        }
+
+        .volume-callout-text {
+            flex: 1;
+        }
+
+        .volume-callout-text strong {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 2px;
+        }
+
+        .volume-callout-text span {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* Timing Badge */
+        .timing-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--orange-500);
+            color: var(--white);
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .timing-badge svg {
+            width: 14px;
+            height: 14px;
+            fill: var(--white);
+        }
+
+        /* Win10 Urgency Section */
+        .urgency-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--orange-500), var(--red-500));
+            color: var(--white);
+        }
+
+        .urgency-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .urgency-content h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .urgency-content p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 24px;
+            line-height: 1.7;
+        }
+
+        .urgency-stats {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 32px;
+        }
+
+        .urgency-stat {
+            border-left: 3px solid rgba(255,255,255,0.4);
+            padding-left: 16px;
+        }
+
+        .urgency-stat-value {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .urgency-stat-label {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-top: 4px;
+        }
+
+        .urgency-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--white);
+            color: var(--red-600);
+            padding: 16px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s;
+        }
+
+        .urgency-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.3);
+        }
+
+        .urgency-industries {
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 28px;
+        }
+
+        .urgency-industries h4 {
+            font-size: 16px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .urgency-industry-list {
+            list-style: none;
+        }
+
+        .urgency-industry-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            font-size: 15px;
+        }
+
+        .urgency-industry-list li:last-child {
+            border-bottom: none;
+        }
+
+        .urgency-industry-list li svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--white);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--blue-600) 0%, var(--blue-700) 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .cta-subtitle {
+            font-size: 18px;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 36px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .cta-btn-primary {
+            background: var(--white);
+            color: var(--blue-700);
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s;
+        }
+
+        .cta-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.3);
+        }
+
+        .cta-btn-secondary {
+            background: transparent;
+            color: var(--white);
+            padding: 16px 32px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s;
+        }
+
+        .cta-btn-secondary:hover {
+            border-color: var(--white);
+            background: rgba(255,255,255,0.1);
+        }
+
+        .cta-contact {
+            margin-top: 40px;
+            font-size: 16px;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .cta-contact a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--gray-900);
+            color: var(--gray-400);
+            padding: 80px 0 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand p {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .footer-certs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 24px;
+        }
+
+        .footer-cert-badge {
+            background: rgba(255,255,255,0.05);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--gray-300);
+        }
+
+        .footer h5 {
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--gray-400);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+
+        .footer-contact-item svg {
+            width: 18px;
+            height: 18px;
+            fill: var(--gray-500);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        .footer-bottom a {
+            color: var(--gray-400);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--white);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .industry-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .industry-grid.reverse {
+                direction: ltr;
+            }
+
+            .urgency-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar-content {
+                justify-content: center;
+            }
+
+            .cert-badges {
+                display: none;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .page-hero {
+                padding: 60px 0;
+            }
+
+            .page-hero h1 {
+                font-size: 32px;
+            }
+
+            .industry-nav {
+                top: 80px;
+            }
+
+            .industry-nav-content {
+                gap: 6px;
+            }
+
+            .industry-nav-link {
+                padding: 8px 14px;
+                font-size: 13px;
+            }
+
+            .industry-section {
+                padding: 60px 0;
+            }
+
+            .industry-content h2 {
+                font-size: 28px;
+            }
+
+            .urgency-content h2 {
+                font-size: 28px;
+            }
+
+            .urgency-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .cta-title {
+                font-size: 28px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div>
+                    Call <a href="tel:4045006057">(404) 500-6057</a> · <a href="/cdn-cgi/l/email-protection#91e2f0fdf4e2d1f4f2fee2e3f4f2e8f2fdf4e2bff2fefc"><span class="__cf_email__" data-cfemail="e99a88858c9aa98c8a869a9b8c8a908a858c9ac78a8684">[email&#160;protected]</span></a>
+                </div>
+                <div class="cert-badges">
+                    <span class="cert-badge">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        R2v3 Certified
+                    </span>
+                    <span class="cert-badge">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        ISO 9001 / 14001 / 45001
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/">
+                    <img src="https://github.com/Ajwad-Uddin/ecos-site/blob/main/LogoTransparent1.png?raw=true" alt="ECOS Technologies" class="logo">
+                </a>
+                <nav class="nav">
+                    <a href="/services" class="nav-link">Services</a>
+                    <a href="/industries" class="nav-link active">Industries</a>
+                    <a href="/how-it-works" class="nav-link">How It Works</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/#quote" class="nav-cta">Get Free Quote</a>
+                </nav>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Warning Banner -->
+    <div class="warning-banner">
+        <div class="container">
+            <div class="warning-banner-content">
+                <svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+                <strong>Windows 10 End of Support: October 14, 2025</strong>
+                <span>— Up to 240 million PCs need secure disposal. Is your organization ready?</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Compliance-First IT Disposal for Regulated Industries</h1>
+                <p>We speak your industry's compliance language. HIPAA, SOX, GLBA, FERPA, NIST 800-88—every device we touch gets the documentation your auditors need.</p>
+                <div class="hero-cta-row">
+                    <a href="/#quote" class="btn-primary">
+                        Get Industry-Specific Quote
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                    </a>
+                    <a href="tel:4045006057" class="btn-secondary">Call (404) 500-6057</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Navigation -->
+    <div class="industry-nav">
+        <div class="container">
+            <div class="industry-nav-content">
+                <a href="#healthcare" class="industry-nav-link">Healthcare</a>
+                <a href="#financial" class="industry-nav-link">Financial Services</a>
+                <a href="#education" class="industry-nav-link">Education K-12</a>
+                <a href="#government" class="industry-nav-link">Government</a>
+                <a href="#enterprise" class="industry-nav-link">Enterprise</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Healthcare Section -->
+    <section class="industry-section" id="healthcare">
+        <div class="container">
+            <div class="industry-grid">
+                <div class="industry-content">
+                    <span class="industry-label">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+                        Healthcare
+                    </span>
+                    <h2>HIPAA-Compliant IT Asset Disposal for Healthcare</h2>
+                    <p>Hospitals and clinics face strict requirements for PHI protection—even on retired equipment. Our HIPAA-compliant ITAD services include Business Associate Agreements, on-site destruction options, and the 6-year documentation retention your compliance team requires.</p>
+                    
+                    <div class="compliance-alert">
+                        <div class="compliance-alert-header">
+                            <svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+                            <strong>HIPAA Violation Risk</strong>
+                        </div>
+                        <p>Improper disposal of PHI-containing devices can result in fines up to $1.5M per violation category. Every device needs documented destruction.</p>
+                    </div>
+
+                    <ul class="requirements-list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>Business Associate Agreement (BAA)</strong> — We sign your BAA before any equipment leaves your facility</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>On-Site Destruction Available</strong> — Watch PHI-containing drives destroyed at your location</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>6-Year Documentation Retention</strong> — Certificates of Destruction maintained for HIPAA audit requirements</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>Serialized Tracking</strong> — Every device logged by serial number with complete chain of custody</span>
+                        </li>
+                    </ul>
+
+                    <div class="industry-cta">
+                        <a href="/#quote" class="industry-cta-primary">
+                            Get Healthcare ITAD Quote
+                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="industry-visual">
+                    <div class="industry-visual-header">
+                        <h3>Healthcare ITAD at Scale</h3>
+                        <p>Hospital systems, clinics, medical offices</p>
+                    </div>
+                    <div class="industry-stats-grid">
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">5K–50K+</div>
+                            <div class="industry-stat-label">Devices per hospital system</div>
+                        </div>
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">500–5K</div>
+                            <div class="industry-stat-label">Devices per clinic network</div>
+                        </div>
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">6 Years</div>
+                            <div class="industry-stat-label">Required doc retention</div>
+                        </div>
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">$1.5M</div>
+                            <div class="industry-stat-label">Max fine per violation</div>
+                        </div>
+                    </div>
+                    <div class="industry-compliance-tags">
+                        <span class="compliance-tag required">HIPAA</span>
+                        <span class="compliance-tag required">BAA Required</span>
+                        <span class="compliance-tag">HITECH</span>
+                        <span class="compliance-tag">NIST 800-88</span>
+                    </div>
+                    <div class="volume-callout">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                        <div class="volume-callout-text">
+                            <strong>Serving Georgia Aquarium, Hall County health systems</strong>
+                            <span>Ask about our healthcare client references</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Services Section -->
+    <section class="industry-section" id="financial">
+        <div class="container">
+            <div class="industry-grid reverse">
+                <div class="industry-content">
+                    <span class="industry-label">
+                        <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+                        Financial Services
+                    </span>
+                    <h2>SOX & GLBA Compliant Disposal for Financial Institutions</h2>
+                    <p>Banks, credit unions, and financial services firms can't afford data breach headlines. Our verified destruction services meet GLBA, SOX, and PCI-DSS requirements—with the documentation your regulators expect.</p>
+                    
+                    <div class="compliance-alert">
+                        <div class="compliance-alert-header">
+                            <svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+                            <strong>$60 Million Lesson</strong>
+                        </div>
+                        <p>Morgan Stanley paid $60M in fines for improper disposal of customer data on retired equipment. Don't become the next cautionary tale.</p>
+                    </div>
+
+                    <ul class="requirements-list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>GLBA & SOX Compliant</strong> — Destruction methods and documentation meet all regulatory requirements</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>PCI-DSS Data Destruction</strong> — Cardholder data eliminated to payment industry standards</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>Multi-Year Contract Options</strong> — Streamlined pricing for ongoing branch refresh cycles</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>Branch Network Coverage</strong> — We pick up from every location, nationwide</span>
+                        </li>
+                    </ul>
+
+                    <div class="industry-cta">
+                        <a href="/#quote" class="industry-cta-primary">
+                            Get Financial Services Quote
+                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="industry-visual">
+                    <div class="industry-visual-header" style="background: linear-gradient(135deg, #059669, #047857);">
+                        <h3>Financial Services ITAD</h3>
+                        <p>Banks, credit unions, investment firms, insurance</p>
+                    </div>
+                    <div class="industry-stats-grid">
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">50K–200K+</div>
+                            <div class="industry-stat-label">Devices per large bank</div>
+                        </div>
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">$60M</div>
+                            <div class="industry-stat-label">Morgan Stanley fine</div>
+                        </div>
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">Premium</div>
+                            <div class="industry-stat-label">Value recovery potential</div>
+                        </div>
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">Multi-Year</div>
+                            <div class="industry-stat-label">Contract available</div>
+                        </div>
+                    </div>
+                    <div class="industry-compliance-tags">
+                        <span class="compliance-tag required">GLBA</span>
+                        <span class="compliance-tag required">SOX</span>
+                        <span class="compliance-tag required">PCI-DSS</span>
+                        <span class="compliance-tag">NIST 800-88</span>
+                        <span class="compliance-tag">FFIEC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="industry-section" id="education">
+        <div class="container">
+            <div class="industry-grid">
+                <div class="industry-content">
+                    <div class="timing-badge">
+                        <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        Peak Season: May–August
+                    </div>
+                    <span class="industry-label">
+                        <svg viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+                        Education K-12
+                    </span>
+                    <h2>FERPA-Compliant ITAD for School Districts</h2>
+                    <p>1:1 device programs mean thousands of Chromebooks and laptops retiring every summer. We help districts turn end-of-life equipment into budget recovery—with FERPA-compliant data destruction and documentation for every device.</p>
+                    
+                    <ul class="requirements-list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>FERPA Compliant Destruction</strong> — Student data eliminated with documented chain of custody</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>District-Level Contracts</strong> — One agreement covers all schools in your district</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>Summer Refresh Specialists</strong> — We scale up for May-August peak season volume</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>Value Recovery for Tight Budgets</strong> — We find residual value to offset your technology costs</span>
+                        </li>
+                    </ul>
+
+                    <div class="industry-cta">
+                        <a href="/#quote" class="industry-cta-primary">
+                            Get Education Quote
+                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="industry-visual">
+                    <div class="industry-visual-header" style="background: linear-gradient(135deg, #7c3aed, #6d28d9);">
+                        <h3>K-12 Education ITAD</h3>
+                        <p>School districts, charter networks, private schools</p>
+                    </div>
+                    <div class="industry-stats-grid">
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">20K–100K+</div>
+                            <div class="industry-stat-label">Devices per district</div>
+                        </div>
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">1000s</div>
+                            <div class="industry-stat-label">Chromebooks per refresh</div>
+                        </div>
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">May–Aug</div>
+                            <div class="industry-stat-label">Peak disposal season</div>
+                        </div>
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">Budget</div>
+                            <div class="industry-stat-label">Recovery focused</div>
+                        </div>
+                    </div>
+                    <div class="industry-compliance-tags">
+                        <span class="compliance-tag required">FERPA</span>
+                        <span class="compliance-tag">COPPA</span>
+                        <span class="compliance-tag">State Privacy Laws</span>
+                    </div>
+                    <div class="volume-callout" style="background: linear-gradient(135deg, #7c3aed, #6d28d9);">
+                        <svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>
+                        <div class="volume-callout-text">
+                            <strong>Serving Hall County School District</strong>
+                            <span>District-level references available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Government Section -->
+    <section class="industry-section" id="government">
+        <div class="container">
+            <div class="industry-grid reverse">
+                <div class="industry-content">
+                    <span class="industry-label">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        Government
+                    </span>
+                    <h2>NIST 800-88 Compliant IT Disposal for Government Agencies</h2>
+                    <p>Federal, state, and local agencies require strict adherence to NIST standards for media sanitization. Our processes meet NIST 800-88 guidelines with the detailed documentation government procurement and audit teams expect.</p>
+                    
+                    <ul class="requirements-list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>NIST 800-88 Compliant</strong> — Clear, Purge, and Destroy methods per federal guidelines</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>GSA Schedule Compatible</strong> — Streamlined procurement for government buyers</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>Detailed Audit Documentation</strong> — Every device tracked with serialized destruction reports</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>Domestic Processing Only</strong> — All equipment processed in US facilities</span>
+                        </li>
+                    </ul>
+
+                    <div class="industry-cta">
+                        <a href="/#quote" class="industry-cta-primary">
+                            Get Government Quote
+                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="industry-visual">
+                    <div class="industry-visual-header" style="background: linear-gradient(135deg, #0369a1, #075985);">
+                        <h3>Government ITAD</h3>
+                        <p>Federal, state, county, municipal agencies</p>
+                    </div>
+                    <div class="industry-stats-grid">
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">NIST</div>
+                            <div class="industry-stat-label">800-88 Compliant</div>
+                        </div>
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">USA</div>
+                            <div class="industry-stat-label">Domestic processing</div>
+                        </div>
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">100%</div>
+                            <div class="industry-stat-label">Audit documentation</div>
+                        </div>
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">R2v3</div>
+                            <div class="industry-stat-label">Certified facility</div>
+                        </div>
+                    </div>
+                    <div class="industry-compliance-tags">
+                        <span class="compliance-tag required">NIST 800-88</span>
+                        <span class="compliance-tag">FISMA</span>
+                        <span class="compliance-tag">FedRAMP</span>
+                        <span class="compliance-tag">DFARS</span>
+                    </div>
+                    <div class="volume-callout" style="background: linear-gradient(135deg, #0369a1, #075985);">
+                        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                        <div class="volume-callout-text">
+                            <strong>Serving USDA and government clients</strong>
+                            <span>Federal references available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Section -->
+    <section class="industry-section" id="enterprise">
+        <div class="container">
+            <div class="industry-grid">
+                <div class="industry-content">
+                    <span class="industry-label">
+                        <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+                        Enterprise
+                    </span>
+                    <h2>Secure IT Disposal for Enterprise Organizations</h2>
+                    <p>Tech companies, Fortune 500s, and growth-stage businesses cycle through equipment faster than most. Protect your intellectual property and trade secrets with our enterprise ITAD services—built for fast refresh cycles and high security requirements.</p>
+                    
+                    <ul class="requirements-list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>IP & Trade Secret Protection</strong> — Complete data elimination protects proprietary information</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>Fast Refresh Cycle Support</strong> — We scale with your 2-3 year equipment turnover</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>High Value Recovery</strong> — Recent enterprise equipment commands premium resale</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <span><strong>SOC 2 Compatible Processes</strong> — Documentation meets enterprise audit requirements</span>
+                        </li>
+                    </ul>
+
+                    <div class="industry-cta">
+                        <a href="/#quote" class="industry-cta-primary">
+                            Get Enterprise Quote
+                            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="industry-visual">
+                    <div class="industry-visual-header" style="background: linear-gradient(135deg, #ea580c, #c2410c);">
+                        <h3>Enterprise ITAD</h3>
+                        <p>Tech companies, Fortune 500, growth-stage</p>
+                    </div>
+                    <div class="industry-stats-grid">
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">2–3 Yr</div>
+                            <div class="industry-stat-label">Fast refresh cycles</div>
+                        </div>
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">High</div>
+                            <div class="industry-stat-label">Value recovery</div>
+                        </div>
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">IP</div>
+                            <div class="industry-stat-label">Protection focus</div>
+                        </div>
+                        <div class="industry-stat">
+                            <div class="industry-stat-value">SOC 2</div>
+                            <div class="industry-stat-label">Compatible docs</div>
+                        </div>
+                    </div>
+                    <div class="industry-compliance-tags">
+                        <span class="compliance-tag">SOC 2</span>
+                        <span class="compliance-tag">ISO 27001</span>
+                        <span class="compliance-tag">NIST CSF</span>
+                        <span class="compliance-tag">GDPR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Windows 10 Urgency Section -->
+    <section class="urgency-section">
+        <div class="container">
+            <div class="urgency-grid">
+                <div class="urgency-content">
+                    <h2>Windows 10 End of Support Is Coming</h2>
+                    <p>October 14, 2025. After that date, Windows 10 PCs stop receiving security updates—making them compliance liabilities. With 80% of businesses still running Windows 10, the disposal wave is coming. Are you ready?</p>
+                    
+                    <div class="urgency-stats">
+                        <div class="urgency-stat">
+                            <div class="urgency-stat-value">240M</div>
+                            <div class="urgency-stat-label">PCs need disposal globally</div>
+                        </div>
+                        <div class="urgency-stat">
+                            <div class="urgency-stat-value">80%</div>
+                            <div class="urgency-stat-label">of businesses still on Win10</div>
+                        </div>
+                    </div>
+
+                    <a href="/#quote" class="urgency-cta">
+                        Plan Your Win10 Disposal Now
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                    </a>
+                </div>
+
+                <div class="urgency-industries">
+                    <h4>Industries Most Affected:</h4>
+                    <ul class="urgency-industry-list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-1.99.9-1.99 2L3 19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 11h-4v4h-4v-4H6v-4h4V6h4v4h4v4z"/></svg>
+                            Healthcare — HIPAA requires secure disposal
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+                            Financial — SOX/GLBA compliance gaps
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+                            Education — Summer 2025 refresh cycle
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                            Government — NIST 800-88 requirements
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Your Industry. Your Compliance. Our Expertise.</h2>
+                <p class="cta-subtitle">Get an industry-specific quote with the compliance documentation your auditors need. Free pickup for qualifying equipment.</p>
+                <div class="cta-buttons">
+                    <a href="/#quote" class="cta-btn-primary">Get Your Free Quote</a>
+                    <a href="tel:4045006057" class="cta-btn-secondary">Call (404) 500-6057</a>
+                </div>
+                <p class="cta-contact">
+                    Or email us at <a href="/cdn-cgi/l/email-protection#1f6c7e737a6c5f7a7c706c6d7a7c667c737a6c317c7072"><span class="__cf_email__" data-cfemail="abd8cac7ced8ebcec8c4d8d9cec8d2c8c7ced885c8c4c6">[email&#160;protected]</span></a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="https://github.com/Ajwad-Uddin/ecos-site/blob/main/LogoWhite1.png?raw=true" alt="ECOS Technologies" style="height: 40px;">
+                    <p>ECOS Technologies provides certified IT asset disposition, data destruction, and electronics recycling services nationwide. R2v3 and ISO certified—in the top 6% of ITAD providers nationally.</p>
+                    <div class="footer-certs">
+                        <span class="footer-cert-badge">R2v3 Certified</span>
+                        <span class="footer-cert-badge">ISO 9001</span>
+                        <span class="footer-cert-badge">ISO 14001</span>
+                        <span class="footer-cert-badge">ISO 45001</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="/services#itad">IT Asset Disposition</a></li>
+                        <li><a href="/services#data-destruction">Data Destruction</a></li>
+                        <li><a href="/services#recycling">Electronics Recycling</a></li>
+                        <li><a href="/services#decommissioning">Data Center Decommissioning</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5>Industries</h5>
+                    <ul class="footer-links">
+                        <li><a href="/industries#healthcare">Healthcare</a></li>
+                        <li><a href="/industries#financial">Financial Services</a></li>
+                        <li><a href="/industries#education">Education</a></li>
+                        <li><a href="/industries#government">Government</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5>Contact</h5>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <span>4761 Hugh Howell Road<br>Tucker, GA 30084</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        <span>(404) 500-6057</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <span><a href="/cdn-cgi/l/email-protection#3744565b524477525458444552544e545b52441954585a"><span class="__cf_email__" data-cfemail="7a091b161f093a1f191509081f190319161f0954191517">[email&#160;protected]</span></a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        <span>Mon–Fri: 9am–5pm EST</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2025 ECOS Technologies. All rights reserved.</span>
+                <div>
+                    <a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 160;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Highlight active industry nav on scroll
+        const section

@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITAD Services | Data Destruction, Electronics Recycling | ECOS Technologies</title>
+    <meta name="description" content="R2v3 certified IT asset disposition, NIST 800-88 data destruction, and electronics recycling. HIPAA, SOX, FERPA compliant. Free pickup nationwide. Certificate of Destruction included.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blue-900: #0a1628;
+            --blue-800: #0f2440;
+            --blue-700: #1a365d;
+            --blue-600: #2563eb;
+            --blue-500: #3b82f6;
+            --blue-400: #60a5fa;
+            --green-500: #22c55e;
+            --green-400: #4ade80;
+            --orange-500: #f97316;
+            --orange-400: #fb923c;
+            --white: #ffffff;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--white);
+            color: var(--gray-800);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .mono {
+            font-family: 'Space Mono', monospace;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: var(--blue-900);
+            color: var(--white);
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .top-bar a {
+            color: var(--blue-400);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .top-bar a:hover {
+            color: var(--white);
+        }
+
+        .cert-badges {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .cert-badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.1);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .cert-badge svg {
+            width: 14px;
+            height: 14px;
+            fill: var(--green-400);
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 48px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-link {
+            color: var(--gray-700);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--blue-600);
+        }
+
+        .nav-cta {
+            background: var(--blue-600);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .nav-cta:hover {
+            background: var(--blue-700);
+            transform: translateY(-1px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-menu-btn svg {
+            width: 28px;
+            height: 28px;
+            stroke: var(--gray-700);
+        }
+
+        /* Page Hero */
+        .page-hero {
+            background: linear-gradient(135deg, var(--blue-900) 0%, var(--blue-800) 50%, var(--blue-700) 100%);
+            color: var(--white);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .page-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .page-hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .page-hero p {
+            font-size: 20px;
+            color: var(--gray-300);
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        .hero-cta-row {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--white);
+            color: var(--blue-700);
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            padding: 14px 28px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--white);
+            background: rgba(255,255,255,0.1);
+        }
+
+        /* Service Navigation */
+        .service-nav {
+            background: var(--gray-50);
+            border-bottom: 1px solid var(--gray-200);
+            padding: 20px 0;
+            position: sticky;
+            top: 80px;
+            z-index: 100;
+        }
+
+        .service-nav-content {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .service-nav-link {
+            padding: 10px 20px;
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 6px;
+            color: var(--gray-600);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .service-nav-link:hover,
+        .service-nav-link.active {
+            background: var(--blue-600);
+            border-color: var(--blue-600);
+            color: var(--white);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-alt {
+            background: var(--gray-50);
+        }
+
+        .section-dark {
+            background: var(--blue-900);
+            color: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--blue-600);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .section-dark .section-label {
+            color: var(--blue-400);
+        }
+
+        .section-title {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .section-dark .section-title {
+            color: var(--white);
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--gray-500);
+        }
+
+        .section-dark .section-subtitle {
+            color: var(--gray-400);
+        }
+
+        /* Service Detail Section */
+        .service-detail {
+            padding: 100px 0;
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        .service-detail:last-of-type {
+            border-bottom: none;
+        }
+
+        .service-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .service-detail-grid.reverse {
+            direction: rtl;
+        }
+
+        .service-detail-grid.reverse > * {
+            direction: ltr;
+        }
+
+        .service-detail-content h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .service-detail-content > p {
+            font-size: 18px;
+            color: var(--gray-600);
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+
+        .service-features-list {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .service-features-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        .service-features-list li:last-child {
+            border-bottom: none;
+        }
+
+        .service-features-list li svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--green-500);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .service-features-list li strong {
+            color: var(--gray-900);
+        }
+
+        .service-features-list li span {
+            color: var(--gray-600);
+            font-size: 15px;
+        }
+
+        .service-cta-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--blue-600);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: gap 0.2s;
+        }
+
+        .service-cta-link:hover {
+            gap: 12px;
+        }
+
+        .service-cta-link svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        /* Service Visual Card */
+        .service-visual {
+            background: linear-gradient(135deg, var(--blue-600) 0%, var(--blue-700) 100%);
+            border-radius: 16px;
+            padding: 48px;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-visual::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+        }
+
+        .service-visual-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .service-visual h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .service-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .service-stat {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+
+        .service-stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .service-stat-label {
+            font-size: 13px;
+            color: rgba(255,255,255,0.7);
+        }
+
+        .compliance-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 24px;
+        }
+
+        .compliance-tag {
+            background: rgba(255,255,255,0.15);
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        /* Equipment Grid */
+        .equipment-section {
+            padding: 80px 0;
+            background: var(--gray-50);
+        }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+        }
+
+        .equipment-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 12px;
+            padding: 24px 16px;
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .equipment-card:hover {
+            border-color: var(--blue-300);
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.1);
+        }
+
+        .equipment-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--gray-100);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px;
+        }
+
+        .equipment-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--blue-600);
+        }
+
+        .equipment-card h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--gray-800);
+        }
+
+        /* Certifications Section */
+        .certifications {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+
+        .cert-card {
+            text-align: center;
+            padding: 32px 24px;
+            background: var(--gray-50);
+            border-radius: 12px;
+            border: 1px solid var(--gray-200);
+        }
+
+        .cert-card-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--blue-600);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+        }
+
+        .cert-card-icon svg {
+            width: 32px;
+            height: 32px;
+            fill: var(--white);
+        }
+
+        .cert-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 8px;
+        }
+
+        .cert-card p {
+            font-size: 14px;
+            color: var(--gray-500);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--blue-600) 0%, var(--blue-700) 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .cta-subtitle {
+            font-size: 18px;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 36px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .cta-btn-primary {
+            background: var(--white);
+            color: var(--blue-700);
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s;
+        }
+
+        .cta-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.3);
+        }
+
+        .cta-btn-secondary {
+            background: transparent;
+            color: var(--white);
+            padding: 16px 32px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s;
+        }
+
+        .cta-btn-secondary:hover {
+            border-color: var(--white);
+            background: rgba(255,255,255,0.1);
+        }
+
+        .cta-contact {
+            margin-top: 40px;
+            font-size: 16px;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .cta-contact a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--gray-900);
+            color: var(--gray-400);
+            padding: 80px 0 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand p {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .footer-certs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 24px;
+        }
+
+        .footer-cert-badge {
+            background: rgba(255,255,255,0.05);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--gray-300);
+        }
+
+        .footer h5 {
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--gray-400);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+
+        .footer-contact-item svg {
+            width: 18px;
+            height: 18px;
+            fill: var(--gray-500);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        .footer-bottom a {
+            color: var(--gray-400);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--white);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .service-detail-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .service-detail-grid.reverse {
+                direction: ltr;
+            }
+
+            .cert-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .equipment-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar-content {
+                justify-content: center;
+            }
+
+            .cert-badges {
+                display: none;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .page-hero {
+                padding: 60px 0;
+            }
+
+            .page-hero h1 {
+                font-size: 32px;
+            }
+
+            .service-nav {
+                top: 80px;
+            }
+
+            .service-nav-content {
+                gap: 6px;
+            }
+
+            .service-nav-link {
+                padding: 8px 14px;
+                font-size: 13px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .service-detail-content h2 {
+                font-size: 28px;
+            }
+
+            .equipment-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .cert-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-title {
+                font-size: 28px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div>
+                    Call <a href="tel:4045006057">(404) 500-6057</a> · <a href="/cdn-cgi/l/email-protection#1063717c75635075737f6362757369737c75633e737f7d"><span class="__cf_email__" data-cfemail="3645575a534576535559454453554f555a53451855595b">[email&#160;protected]</span></a>
+                </div>
+                <div class="cert-badges">
+                    <span class="cert-badge">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        R2v3 Certified
+                    </span>
+                    <span class="cert-badge">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        ISO 9001 / 14001 / 45001
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/">
+                    <img src="https://github.com/Ajwad-Uddin/ecos-site/blob/main/LogoTransparent1.png?raw=true" alt="ECOS Technologies" class="logo">
+                </a>
+                <nav class="nav">
+                    <a href="/services" class="nav-link active">Services</a>
+                    <a href="/industries" class="nav-link">Industries</a>
+                    <a href="/how-it-works" class="nav-link">How It Works</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/#quote" class="nav-cta">Get Free Quote</a>
+                </nav>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Certified ITAD Services That Protect Your Data & Bottom Line</h1>
+                <p>From secure data destruction to value recovery, we handle IT asset disposition the right way. R2v3 and ISO certified—putting us in the top 6% of ITAD providers nationwide.</p>
+                <div class="hero-cta-row">
+                    <a href="/#quote" class="btn-primary">
+                        Schedule Free Pickup
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                    </a>
+                    <a href="tel:4045006057" class="btn-secondary">Call (404) 500-6057</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Navigation -->
+    <div class="service-nav">
+        <div class="container">
+            <div class="service-nav-content">
+                <a href="#itad" class="service-nav-link">IT Asset Disposition</a>
+                <a href="#data-destruction" class="service-nav-link">Data Destruction</a>
+                <a href="#recycling" class="service-nav-link">Electronics Recycling</a>
+                <a href="#decommissioning" class="service-nav-link">Data Center Decommissioning</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- IT Asset Disposition -->
+    <section class="service-detail" id="itad">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-detail-content">
+                    <h2>IT Asset Disposition (ITAD)</h2>
+                    <p>Turn retired IT equipment from a liability into revenue. We handle everything from pickup to final disposition, with complete chain of custody documentation and value recovery that often puts money back in your pocket.</p>
+                    
+                    <ul class="service-features-list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>Free Nationwide Pickup</strong><br>
+                                <span>Our trucks, our team. Background-checked, uniformed employees—never third-party contractors.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>Value Recovery & Revenue Share</strong><br>
+                                <span>We find the resale value in your old equipment. Many clients get paid instead of paying us.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>Serialized Asset Tracking</strong><br>
+                                <span>Every device logged with serial number, make, model. Full audit trail for compliance.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>Complete Documentation</strong><br>
+                                <span>Certificate of Destruction, Certificate of Recycling, chain of custody reports—all included.</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="/#quote" class="service-cta-link">
+                        Get ITAD Quote
+                        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                    </a>
+                </div>
+
+                <div class="service-visual">
+                    <div class="service-visual-content">
+                        <h3>Why Companies Choose Our ITAD</h3>
+                        <div class="service-stats">
+                            <div class="service-stat">
+                                <div class="service-stat-value">24hr</div>
+                                <div class="service-stat-label">Quote Turnaround</div>
+                            </div>
+                            <div class="service-stat">
+                                <div class="service-stat-value">50</div>
+                                <div class="service-stat-label">States Covered</div>
+                            </div>
+                            <div class="service-stat">
+                                <div class="service-stat-value">Top 6%</div>
+                                <div class="service-stat-label">Nationally Certified</div>
+                            </div>
+                            <div class="service-stat">
+                                <div class="service-stat-value">0%</div>
+                                <div class="service-stat-label">Landfill Policy</div>
+                            </div>
+                        </div>
+                        <div class="compliance-tags">
+                            <span class="compliance-tag">R2v3</span>
+                            <span class="compliance-tag">ISO 9001</span>
+                            <span class="compliance-tag">ISO 14001</span>
+                            <span class="compliance-tag">ISO 45001</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Destruction -->
+    <section class="service-detail section-alt" id="data-destruction">
+        <div class="container">
+            <div class="service-detail-grid reverse">
+                <div class="service-detail-content">
+                    <h2>Certified Data Destruction</h2>
+                    <p>Protect your organization from data breaches and compliance violations. Our NIST 800-88 compliant data destruction services include both software-based sanitization and physical destruction—with Certificate of Destruction for every single device.</p>
+                    
+                    <ul class="service-features-list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>NIST 800-88 Compliant</strong><br>
+                                <span>Data sanitization methods exceed federal standards. Clear, Purge, or Destroy—based on your security requirements.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>DoD 5220.22-M Standard</strong><br>
+                                <span>Department of Defense-grade data wiping when required. Multiple overwrite passes ensure complete erasure.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>On-Site or Off-Site Options</strong><br>
+                                <span>We come to you for witnessed destruction, or process securely at our facility. Your choice.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>Video Verification Available</strong><br>
+                                <span>Watch your drives get destroyed in real-time. Video documentation for audit purposes.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>Certificate of Destruction</strong><br>
+                                <span>Serialized certificates documenting device ID, destruction method, date, and technician. Audit-ready.</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="/#quote" class="service-cta-link">
+                        Get Data Destruction Quote
+                        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                    </a>
+                </div>
+
+                <div class="service-visual">
+                    <div class="service-visual-content">
+                        <h3>Compliance Standards We Meet</h3>
+                        <div class="service-stats">
+                            <div class="service-stat">
+                                <div class="service-stat-value">HIPAA</div>
+                                <div class="service-stat-label">Healthcare</div>
+                            </div>
+                            <div class="service-stat">
+                                <div class="service-stat-value">SOX</div>
+                                <div class="service-stat-label">Financial</div>
+                            </div>
+                            <div class="service-stat">
+                                <div class="service-stat-value">GLBA</div>
+                                <div class="service-stat-label">Banking</div>
+                            </div>
+                            <div class="service-stat">
+                                <div class="service-stat-value">FERPA</div>
+                                <div class="service-stat-label">Education</div>
+                            </div>
+                        </div>
+                        <div class="compliance-tags">
+                            <span class="compliance-tag">NIST 800-88</span>
+                            <span class="compliance-tag">DoD 5220.22-M</span>
+                            <span class="compliance-tag">PCI-DSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Electronics Recycling -->
+    <section class="service-detail" id="recycling">
+        <div class="container">
+            <div class="service-detail-grid">
+                <div class="service-detail-content">
+                    <h2>R2v3 Certified Electronics Recycling</h2>
+                    <p>Meet your sustainability goals without compromising security. Our R2v3 certified recycling process ensures responsible e-waste handling with complete downstream vendor auditing and zero-landfill commitment.</p>
+                    
+                    <ul class="service-features-list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>R2v3 Certified Facility</strong><br>
+                                <span>The highest standard in responsible electronics recycling. Rigorous third-party audits verify our processes.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>Zero Landfill Policy</strong><br>
+                                <span>100% of materials are reused, refurbished, or responsibly recycled. Nothing goes to the landfill.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>Downstream Vendor Auditing</strong><br>
+                                <span>We verify where every material goes. No shady exports to developing countries.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>Certificate of Recycling</strong><br>
+                                <span>Detailed documentation of what was recycled and how. Perfect for ESG reporting.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>Domestic Processing Only</strong><br>
+                                <span>All equipment processed in our US facility. Your materials never leave the country.</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="/#quote" class="service-cta-link">
+                        Get Recycling Quote
+                        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                    </a>
+                </div>
+
+                <div class="service-visual">
+                    <div class="service-visual-content">
+                        <h3>Environmental Impact</h3>
+                        <div class="service-stats">
+                            <div class="service-stat">
+                                <div class="service-stat-value">0%</div>
+                                <div class="service-stat-label">Landfill Rate</div>
+                            </div>
+                            <div class="service-stat">
+                                <div class="service-stat-value">100%</div>
+                                <div class="service-stat-label">Material Recovery</div>
+                            </div>
+                            <div class="service-stat">
+                                <div class="service-stat-value">R2v3</div>
+                                <div class="service-stat-label">Certified</div>
+                            </div>
+                            <div class="service-stat">
+                                <div class="service-stat-value">USA</div>
+                                <div class="service-stat-label">Processing</div>
+                            </div>
+                        </div>
+                        <div class="compliance-tags">
+                            <span class="compliance-tag">ESG Reporting</span>
+                            <span class="compliance-tag">EPA Compliant</span>
+                            <span class="compliance-tag">State Certified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Center Decommissioning -->
+    <section class="service-detail section-alt" id="decommissioning">
+        <div class="container">
+            <div class="service-detail-grid reverse">
+                <div class="service-detail-content">
+                    <h2>Data Center Decommissioning</h2>
+                    <p>Full-service data center decommissioning from single racks to entire facilities. We handle project management, secure asset removal, inventory reconciliation, and logistics coordination—minimizing downtime and ensuring compliance.</p>
+                    
+                    <ul class="service-features-list">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>Project Management</strong><br>
+                                <span>Dedicated project manager coordinates every aspect. Clear timelines, milestones, and communication.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>Secure Asset Removal</strong><br>
+                                <span>Rack-by-rack removal with complete chain of custody. Sealed containers, GPS tracking.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>Inventory Reconciliation</strong><br>
+                                <span>Match every asset to your records. Detailed reporting of what was removed and where it went.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>Logistics Coordination</strong><br>
+                                <span>We handle transportation, staging, and scheduling. Work around your operational requirements.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            <div>
+                                <strong>Value Recovery</strong><br>
+                                <span>Maximize returns on enterprise equipment. Servers, storage arrays, networking gear—we find buyers.</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="/#quote" class="service-cta-link">
+                        Discuss Your Decommission Project
+                        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                    </a>
+                </div>
+
+                <div class="service-visual">
+                    <div class="service-visual-content">
+                        <h3>Decommission Capabilities</h3>
+                        <div class="service-stats">
+                            <div class="service-stat">
+                                <div class="service-stat-value">1–1000+</div>
+                                <div class="service-stat-label">Racks Handled</div>
+                            </div>
+                            <div class="service-stat">
+                                <div class="service-stat-value">24/7</div>
+                                <div class="service-stat-label">Scheduling Available</div>
+                            </div>
+                            <div class="service-stat">
+                                <div class="service-stat-value">Secure</div>
+                                <div class="service-stat-label">Chain of Custody</div>
+                            </div>
+                            <div class="service-stat">
+                                <div class="service-stat-value">Full</div>
+                                <div class="service-stat-label">Documentation</div>
+                            </div>
+                        </div>
+                        <div class="compliance-tags">
+                            <span class="compliance-tag">Cloud Migration</span>
+                            <span class="compliance-tag">Consolidation</span>
+                            <span class="compliance-tag">Relocation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment We Accept -->
+    <section class="equipment-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Equipment We Accept</span>
+                <h2 class="section-title">If It Plugs In, We'll Pick It Up</h2>
+                <p class="section-subtitle">From laptops to data centers, we handle IT equipment of all types and quantities.</p>
+            </div>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <svg viewBox="0 0 24 24"><path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+                    </div>
+                    <h4>Laptops</h4>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <svg viewBox="0 0 24 24"><path d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"/></svg>
+                    </div>
+                    <h4>Desktops</h4>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <svg viewBox="0 0 24 24"><path d="M2 9h2v6H2V9zm0-4h2v2H2V5zm0 10h2v2H2v-2zm18-6h2v6h-2V9zm0-4h2v2h-2V5zm0 10h2v2h-2v-2zM6 5h12v14H6V5zm2 2v10h8V7H8z"/></svg>
+                    </div>
+                    <h4>Servers</h4>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <svg viewBox="0 0 24 24"><path d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/></svg>
+                    </div>
+                    <h4>Networking</h4>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 7h2v2H7zm0 4h2v2H7zm0 4h2v2H7zm4-8h6v2h-6zm0 4h6v2h-6zm0 4h6v2h-6z"/></svg>
+                    </div>
+                    <h4>Storage</h4>
+                </div>
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 8h-1V3H6v5H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zM8 5h8v3H8V5zm8 14H8v-4h8v4zm2-4v-2H6v2H4v-4c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v4h-2z"/></svg>
+                    </div>
+                    <h4>Printers</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Certifications</span>
+                <h2 class="section-title">Top 6% of ITAD Providers Nationally</h2>
+                <p class="section-subtitle">These certifications aren't just badges—they're your protection against data breaches, compliance violations, and environmental liability.</p>
+            </div>
+
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                    </div>
+                    <h4>R2v3 Certified</h4>
+                    <p>The gold standard for responsible electronics recycling. Third-party audited environmental and data security practices.</p>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                    </div>
+                    <h4>ISO 9001</h4>
+                    <p>Quality management systems certification. Consistent, documented processes that deliver reliable results.</p>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                    </div>
+                    <h4>ISO 14001</h4>
+                    <p>Environmental management certification. Proven commitment to sustainable practices and regulatory compliance.</p>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                    </div>
+                    <h4>ISO 45001</h4>
+                    <p>Occupational health and safety certification. Safe workplace practices protect your liability exposure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Get Equipment Out of Your Office, Money Back in Your Budget</h2>
+                <p class="cta-subtitle">Free quote in 24 hours. Free pickup for qualifying equipment. Certificate of Destruction included.</p>
+                <div class="cta-buttons">
+                    <a href="/#quote" class="cta-btn-primary">Get Your Free Quote</a>
+                    <a href="tel:4045006057" class="cta-btn-secondary">Call (404) 500-6057</a>
+                </div>
+                <p class="cta-contact">
+                    Or email us at <a href="/cdn-cgi/l/email-protection#ec9f8d80899fac898f839f9e898f958f80899fc28f8381"><span class="__cf_email__" data-cfemail="f182909d9482b194929e8283949288929d9482df929e9c">[email&#160;protected]</span></a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="https://github.com/Ajwad-Uddin/ecos-site/blob/main/LogoWhite1.png?raw=true" alt="ECOS Technologies" style="height: 40px;">
+                    <p>ECOS Technologies provides certified IT asset disposition, data destruction, and electronics recycling services nationwide. R2v3 and ISO certified—in the top 6% of ITAD providers nationally.</p>
+                    <div class="footer-certs">
+                        <span class="footer-cert-badge">R2v3 Certified</span>
+                        <span class="footer-cert-badge">ISO 9001</span>
+                        <span class="footer-cert-badge">ISO 14001</span>
+                        <span class="footer-cert-badge">ISO 45001</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="/services#itad">IT Asset Disposition</a></li>
+                        <li><a href="/services#data-destruction">Data Destruction</a></li>
+                        <li><a href="/services#recycling">Electronics Recycling</a></li>
+                        <li><a href="/services#decommissioning">Data Center Decommissioning</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5>Industries</h5>
+                    <ul class="footer-links">
+                        <li><a href="/industries#healthcare">Healthcare</a></li>
+                        <li><a href="/industries#financial">Financial Services</a></li>
+                        <li><a href="/industries#education">Education</a></li>
+                        <li><a href="/industries#government">Government</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5>Contact</h5>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <span>4761 Hugh Howell Road<br>Tucker, GA 30084</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        <span>(404) 500-6057</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <span><a href="/cdn-cgi/l/email-protection#5e2d3f323b2d1e3b3d312d2c3b3d273d323b2d703d3133"><span class="__cf_email__" data-cfemail="097a68656c7a496c6a667a7b6c6a706a656c7a276a6664">[email&#160;protected]</span></a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        <span>Mon–Fri: 9am–5pm EST</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2025 ECOS Technologies. All rights reserved.</span>
+                <div>
+                    <a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 160; // Account for sticky headers
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Highlight active service nav on scroll
+        const sect

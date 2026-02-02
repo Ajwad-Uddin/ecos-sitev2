@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works | Free IT Equipment Pickup in 4 Simple Steps | ECOS Technologies</title>
+    <meta name="description" content="Free quote in 24 hours. Free pickup nationwide. Certificate of Destruction included. See exactly how we handle your IT equipment disposal—from first call to final documentation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blue-900: #0a1628;
+            --blue-800: #0f2440;
+            --blue-700: #1a365d;
+            --blue-600: #2563eb;
+            --blue-500: #3b82f6;
+            --blue-400: #60a5fa;
+            --green-500: #22c55e;
+            --green-400: #4ade80;
+            --orange-500: #f97316;
+            --orange-400: #fb923c;
+            --red-500: #ef4444;
+            --white: #ffffff;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--white);
+            color: var(--gray-800);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .mono {
+            font-family: 'Space Mono', monospace;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: var(--blue-900);
+            color: var(--white);
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .top-bar a {
+            color: var(--blue-400);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .top-bar a:hover {
+            color: var(--white);
+        }
+
+        .cert-badges {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .cert-badge {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.1);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .cert-badge svg {
+            width: 14px;
+            height: 14px;
+            fill: var(--green-400);
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 48px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-link {
+            color: var(--gray-700);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--blue-600);
+        }
+
+        .nav-cta {
+            background: var(--blue-600);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .nav-cta:hover {
+            background: var(--blue-700);
+            transform: translateY(-1px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-menu-btn svg {
+            width: 28px;
+            height: 28px;
+            stroke: var(--gray-700);
+        }
+
+        /* Hero */
+        .page-hero {
+            background: linear-gradient(135deg, var(--blue-900) 0%, var(--blue-800) 50%, var(--blue-700) 100%);
+            color: var(--white);
+            padding: 80px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(34, 197, 94, 0.2);
+            color: var(--green-400);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .page-hero h1 {
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero-highlight {
+            color: var(--green-400);
+        }
+
+        .page-hero p {
+            font-size: 20px;
+            color: var(--gray-300);
+            margin-bottom: 40px;
+            line-height: 1.6;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-value {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .hero-stat-label {
+            font-size: 14px;
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Process Timeline */
+        .process-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 80px;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--blue-600);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--gray-500);
+        }
+
+        /* Timeline Steps */
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, var(--blue-600), var(--green-500));
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .timeline-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 80px;
+            position: relative;
+        }
+
+        .timeline-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-step:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-step:nth-child(even) .timeline-content {
+            text-align: right;
+            padding-right: 80px;
+            padding-left: 0;
+        }
+
+        .timeline-step:nth-child(even) .timeline-visual {
+            margin-left: 80px;
+            margin-right: 0;
+        }
+
+        .timeline-number {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 64px;
+            height: 64px;
+            background: var(--blue-600);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--white);
+            z-index: 10;
+            border: 4px solid var(--white);
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
+        }
+
+        .timeline-step:nth-child(4) .timeline-number {
+            background: var(--green-500);
+            box-shadow: 0 4px 20px rgba(34, 197, 94, 0.3);
+        }
+
+        .timeline-content {
+            width: calc(50% - 32px);
+            padding-left: 80px;
+        }
+
+        .timeline-content h3 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 12px;
+        }
+
+        .timeline-content p {
+            font-size: 17px;
+            color: var(--gray-600);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .timeline-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .timeline-feature {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--gray-50);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: var(--gray-700);
+            font-weight: 500;
+        }
+
+        .timeline-feature svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--green-500);
+        }
+
+        .timeline-visual {
+            width: calc(50% - 32px);
+            margin-right: 80px;
+        }
+
+        .visual-card {
+            background: linear-gradient(135deg, var(--blue-600) 0%, var(--blue-700) 100%);
+            border-radius: 16px;
+            padding: 32px;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .visual-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+        }
+
+        .visual-card.green {
+            background: linear-gradient(135deg, var(--green-500) 0%, #15803d 100%);
+        }
+
+        .visual-card.orange {
+            background: linear-gradient(135deg, var(--orange-500) 0%, #c2410c 100%);
+        }
+
+        .visual-card-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .visual-card h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .visual-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .visual-stat {
+            text-align: center;
+            background: rgba(255,255,255,0.15);
+            padding: 16px 12px;
+            border-radius: 8px;
+        }
+
+        .visual-stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .visual-stat-label {
+            font-size: 11px;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* What You Need Section */
+        .what-you-need {
+            padding: 80px 0;
+            background: var(--gray-50);
+        }
+
+        .needs-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .need-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 40px 32px;
+            text-align: center;
+            border: 1px solid var(--gray-200);
+            transition: all 0.3s;
+        }
+
+        .need-card:hover {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            transform: translateY(-4px);
+        }
+
+        .need-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--blue-500) 0%, var(--blue-600) 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+        }
+
+        .need-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: var(--white);
+        }
+
+        .need-card h4 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 12px;
+        }
+
+        .need-card p {
+            font-size: 16px;
+            color: var(--gray-500);
+            line-height: 1.6;
+        }
+
+        /* Urgency Banner */
+        .urgency-banner {
+            background: linear-gradient(135deg, var(--orange-500) 0%, var(--red-500) 100%);
+            padding: 60px 0;
+            color: var(--white);
+        }
+
+        .urgency-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .urgency-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .urgency-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        .urgency-text h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .urgency-text p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .urgency-stats {
+            display: flex;
+            gap: 40px;
+        }
+
+        .urgency-stat {
+            text-align: center;
+        }
+
+        .urgency-stat-value {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .urgency-stat-label {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Trust Section */
+        .trust-section {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+
+        .trust-item {
+            text-align: center;
+            padding: 32px 20px;
+        }
+
+        .trust-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--blue-600);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .trust-icon svg {
+            width: 32px;
+            height: 32px;
+            fill: var(--white);
+        }
+
+        .trust-item h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 8px;
+        }
+
+        .trust-item p {
+            font-size: 14px;
+            color: var(--gray-500);
+            line-height: 1.6;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            background: var(--gray-50);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 28px;
+            border: 1px solid var(--gray-200);
+        }
+
+        .faq-item h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 12px;
+        }
+
+        .faq-item p {
+            font-size: 15px;
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--blue-600) 0%, var(--blue-700) 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-size: 44px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .cta-subtitle {
+            font-size: 20px;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+
+        .cta-btn-primary {
+            background: var(--white);
+            color: var(--blue-700);
+            padding: 18px 36px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cta-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.3);
+        }
+
+        .cta-btn-primary svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .cta-btn-secondary {
+            background: transparent;
+            color: var(--white);
+            padding: 18px 36px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.2s;
+        }
+
+        .cta-btn-secondary:hover {
+            border-color: var(--white);
+            background: rgba(255,255,255,0.1);
+        }
+
+        .cta-promise {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+            font-size: 14px;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .cta-promise span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cta-promise svg {
+            width: 18px;
+            height: 18px;
+            fill: var(--green-400);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--gray-900);
+            color: var(--gray-400);
+            padding: 80px 0 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand p {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .footer-certs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 24px;
+        }
+
+        .footer-cert-badge {
+            background: rgba(255,255,255,0.05);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--gray-300);
+        }
+
+        .footer h5 {
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--gray-400);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+
+        .footer-contact-item svg {
+            width: 18px;
+            height: 18px;
+            fill: var(--gray-500);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        .footer-bottom a {
+            color: var(--gray-400);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--white);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .timeline::before {
+                left: 32px;
+            }
+
+            .timeline-number {
+                left: 32px;
+                width: 56px;
+                height: 56px;
+                font-size: 24px;
+            }
+
+            .timeline-step,
+            .timeline-step:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .timeline-content,
+            .timeline-step:nth-child(even) .timeline-content {
+                width: 100%;
+                padding-left: 80px;
+                padding-right: 0;
+                text-align: left;
+            }
+
+            .timeline-visual,
+            .timeline-step:nth-child(even) .timeline-visual {
+                width: 100%;
+                margin-left: 80px;
+                margin-right: 0;
+                margin-top: 24px;
+            }
+
+            .needs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .trust-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar-content {
+                justify-content: center;
+            }
+
+            .cert-badges {
+                display: none;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .page-hero {
+                padding: 60px 0 80px;
+            }
+
+            .page-hero h1 {
+                font-size: 36px;
+            }
+
+            .hero-stats {
+                gap: 30px;
+            }
+
+            .hero-stat-value {
+                font-size: 36px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .timeline::before {
+                left: 24px;
+            }
+
+            .timeline-number {
+                left: 24px;
+                width: 48px;
+                height: 48px;
+                font-size: 20px;
+            }
+
+            .timeline-content,
+            .timeline-step:nth-child(even) .timeline-content {
+                padding-left: 64px;
+            }
+
+            .timeline-visual,
+            .timeline-step:nth-child(even) .timeline-visual {
+                margin-left: 64px;
+            }
+
+            .timeline-content h3 {
+                font-size: 22px;
+            }
+
+            .urgency-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .urgency-stats {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .trust-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-title {
+                font-size: 28px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div>
+                    Call <a href="tel:4045006057">(404) 500-6057</a> · <a href="/cdn-cgi/l/email-protection#2b584a474e586b4e484458594e485248474e5805484446"><span class="__cf_email__" data-cfemail="9ae9fbf6ffe9dafff9f5e9e8fff9e3f9f6ffe9b4f9f5f7">[email&#160;protected]</span></a>
+                </div>
+                <div class="cert-badges">
+                    <span class="cert-badge">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        R2v3 Certified
+                    </span>
+                    <span class="cert-badge">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        ISO 9001 / 14001 / 45001
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/">
+                    <img src="https://github.com/Ajwad-Uddin/ecos-site/blob/main/LogoTransparent1.png?raw=true" alt="ECOS Technologies" class="logo">
+                </a>
+                <nav class="nav">
+                    <a href="/services" class="nav-link">Services</a>
+                    <a href="/industries" class="nav-link">Industries</a>
+                    <a href="/how-it-works" class="nav-link active">How It Works</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/#quote" class="nav-cta">Get Free Quote</a>
+                </nav>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">No hassle. No hidden fees. No BS.</span>
+                <h1>From Old Equipment to <span class="hero-highlight">Certified Destruction</span> in 4 Steps</h1>
+                <p>We make IT disposal stupidly simple. Request a quote, we pick up, we destroy your data, you get the paperwork. Done. No spreadsheets, no chasing vendors, no compliance headaches.</p>
+                
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">24hr</div>
+                        <div class="hero-stat-label">Quote Turnaround</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">Free</div>
+                        <div class="hero-stat-label">Pickup Nationwide</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">100%</div>
+                        <div class="hero-stat-label">Compliant Docs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The Process</span>
+                <h2 class="section-title">Here's Exactly What Happens</h2>
+                <p class="section-subtitle">No surprises, no hidden steps. This is the entire process from start to finish.</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Step 1 -->
+                <div class="timeline-step">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3>Tell Us What You've Got</h3>
+                        <p>Fill out our quick form or shoot us an email. List your equipment—rough counts are fine. Laptops, desktops, servers, networking gear, whatever. We'll take it from there.</p>
+                        <div class="timeline-features">
+                            <span class="timeline-feature">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                No exact inventory required
+                            </span>
+                            <span class="timeline-feature">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                5 minute form
+                            </span>
+                            <span class="timeline-feature">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                Response within 24 hours
+                            </span>
+                        </div>
+                    </div>
+                    <div class="timeline-visual">
+                        <div class="visual-card">
+                            <div class="visual-card-content">
+                                <h4>What We Need From You</h4>
+                                <div class="visual-stats">
+                                    <div class="visual-stat">
+                                        <div class="visual-stat-value">~Count</div>
+                                        <div class="visual-stat-label">Rough Numbers</div>
+                                    </div>
+                                    <div class="visual-stat">
+                                        <div class="visual-stat-value">Types</div>
+                                        <div class="visual-stat-label">Equipment Mix</div>
+                                    </div>
+                                    <div class="visual-stat">
+                                        <div class="visual-stat-value">Location</div>
+                                        <div class="visual-stat-label">Pickup Address</div>
+                                    </div>
+                                    <div class="visual-stat">
+                                        <div class="visual-stat-value">Contact</div>
+                                        <div class="visual-stat-label">Your Info</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-step">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3>We Show Up & Load Out</h3>
+                        <p>Our uniformed, background-checked team arrives with company trucks. Not some random contractor—our employees. We load everything, you sign the manifest, and we're gone. That simple.</p>
+                        <div class="timeline-features">
+                            <span class="timeline-feature">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                Our trucks, our team
+                            </span>
+                            <span class="timeline-feature">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                Background-checked employees
+                            </span>
+                            <span class="timeline-feature">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                Chain of custody starts here
+                            </span>
+                        </div>
+                    </div>
+                    <div class="timeline-visual">
+                        <div class="visual-card orange">
+                            <div class="visual-card-content">
+                                <h4>What You DON'T Need to Do</h4>
+                                <div class="visual-stats">
+                                    <div class="visual-stat">
+                                        <div class="visual-stat-value">❌</div>
+                                        <div class="visual-stat-label">Wipe Data First</div>
+                                    </div>
+                                    <div class="visual-stat">
+                                        <div class="visual-stat-value">❌</div>
+                                        <div class="visual-stat-label">Pack Anything</div>
+                                    </div>
+                                    <div class="visual-stat">
+                                        <div class="visual-stat-value">❌</div>
+                                        <div class="visual-stat-label">Remove HDDs</div>
+                                    </div>
+                                    <div class="visual-stat">
+                                        <div class="visual-stat-value">❌</div>
+                                        <div class="visual-stat-label">Rent a Truck</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-step">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3>Secure Processing & Data Destruction</h3>
+                        <p>At our R2v3 certified facility, every asset gets logged by serial number. Data is destroyed to NIST 800-88 standards. Equipment sorted for refurbishment or responsible recycling. Zero landfill, ever.</p>
+                        <div class="timeline-features">
+                            <span class="timeline-feature">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                NIST 800-88 compliant
+                            </span>
+                            <span class="timeline-feature">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                Serialized tracking
+                            </span>
+                            <span class="timeline-feature">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                Zero landfill policy
+                            </span>
+                        </div>
+                    </div>
+                    <div class="timeline-visual">
+                        <div class="visual-card">
+                            <div class="visual-card-content">
+                                <h4>Compliance Standards</h4>
+                                <div class="visual-stats">
+                                    <div class="visual-stat">
+                                        <div class="visual-stat-value">HIPAA</div>
+                                        <div class="visual-stat-label">Healthcare</div>
+                                    </div>
+                                    <div class="visual-stat">
+                                        <div class="visual-stat-value">SOX</div>
+                                        <div class="visual-stat-label">Financial</div>
+                                    </div>
+                                    <div class="visual-stat">
+                                        <div class="visual-stat-value">FERPA</div>
+                                        <div class="visual-stat-label">Education</div>
+                                    </div>
+                                    <div class="visual-stat">
+                                        <div class="visual-stat-value">NIST</div>
+                                        <div class="visual-stat-label">Government</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-step">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h3>You Get Your Documentation (+ Maybe a Check)</h3>
+                        <p>Certificate of Destruction with every serial number, destruction method, date, and technician. Certificate of Recycling for ESG reporting. If your equipment has resale value, you get a revenue share. Simple as that.</p>
+                        <div class="timeline-features">
+                            <span class="timeline-feature">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                Serialized COD included
+                            </span>
+                            <span class="timeline-feature">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                Audit-ready reports
+                            </span>
+                            <span class="timeline-feature">
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                Potential revenue share
+                            </span>
+                        </div>
+                    </div>
+                    <div class="timeline-visual">
+                        <div class="visual-card green">
+                            <div class="visual-card-content">
+                                <h4>What You Receive</h4>
+                                <div class="visual-stats">
+                                    <div class="visual-stat">
+                                        <div class="visual-stat-value">COD</div>
+                                        <div class="visual-stat-label">Destruction Cert</div>
+                                    </div>
+                                    <div class="visual-stat">
+                                        <div class="visual-stat-value">COR</div>
+                                        <div class="visual-stat-label">Recycling Cert</div>
+                                    </div>
+                                    <div class="visual-stat">
+                                        <div class="visual-stat-value">Audit</div>
+                                        <div class="visual-stat-label">Asset Report</div>
+                                    </div>
+                                    <div class="visual-stat">
+                                        <div class="visual-stat-value">💰</div>
+                                        <div class="visual-stat-label">Value Recovery</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Need -->
+    <section class="what-you-need">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Getting Started</span>
+                <h2 class="section-title">All You Need to Do</h2>
+                <p class="section-subtitle">We've eliminated every unnecessary step. Here's what's actually required from you.</p>
+            </div>
+
+            <div class="needs-grid">
+                <div class="need-card">
+                    <div class="need-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                    </div>
+                    <h4>Fill Out the Form</h4>
+                    <p>Takes 5 minutes. Tell us roughly what you have—we don't need serial numbers or exact counts upfront.</p>
+                </div>
+
+                <div class="need-card">
+                    <div class="need-icon">
+                        <svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+                    </div>
+                    <h4>Pick a Date</h4>
+                    <p>Choose when works for you. We're flexible—regular hours, after hours, weekends. Your call.</p>
+                </div>
+
+                <div class="need-card">
+                    <div class="need-icon">
+                        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                    </div>
+                    <h4>Point to the Stuff</h4>
+                    <p>When we arrive, just show us where the equipment is. We'll handle the rest—packing, loading, everything.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Banner -->
+    <section class="urgency-banner">
+        <div class="container">
+            <div class="urgency-content">
+                <div class="urgency-text">
+                    <span class="urgency-badge">⚠️ Deadline Approaching</span>
+                    <h2>Windows 10 Support Ends October 14, 2025</h2>
+                    <p>240 million PCs globally need disposal. Get ahead of the rush—schedule your pickup now before everyone else figures this out.</p>
+                </div>
+                <div class="urgency-stats">
+                    <div class="urgency-stat">
+                        <div class="urgency-stat-value">240M</div>
+                        <div class="urgency-stat-label">PCs Need Disposal</div>
+                    </div>
+                    <div class="urgency-stat">
+                        <div class="urgency-stat-value">80%</div>
+                        <div class="urgency-stat-label">Still on Win10</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Why Us</span>
+                <h2 class="section-title">We're Not Just Another Recycler</h2>
+                <p class="section-subtitle">R2v3 + ISO certified. That puts us in the top 6% of ITAD providers nationally.</p>
+            </div>
+
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                    </div>
+                    <h4>R2v3 Certified</h4>
+                    <p>The gold standard for responsible electronics recycling. Not R2—R2v3, the newest version.</p>
+                </div>
+
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                    </div>
+                    <h4>NIST 800-88</h4>
+                    <p>Federal-grade data destruction. Clear, Purge, or Destroy based on your security requirements.</p>
+                </div>
+
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>
+                    </div>
+                    <h4>Our People</h4>
+                    <p>Background-checked employees. Company trucks. No third-party contractors touching your data.</p>
+                </div>
+
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+                    </div>
+                    <h4>Zero Landfill</h4>
+                    <p>Everything gets reused, refurbished, or properly recycled. Nothing dumped in a landfill. Ever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Questions</span>
+                <h2 class="section-title">The Stuff You're Wondering</h2>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How much does this cost?</h4>
+                    <p>Depends on the equipment. Often, value recovery means YOU get paid. Worst case, disposal fees are transparent and quoted upfront—no surprises.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Do I need to wipe the data first?</h4>
+                    <p>Nope. Leave the drives in. We handle all data destruction to NIST 800-88 standards and give you the Certificate of Destruction proving it.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What if I don't have exact counts?</h4>
+                    <p>That's fine. "About 50 laptops and a bunch of desktops" works. We'll inventory everything at pickup and give you exact counts after.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>How long until pickup?</h4>
+                    <p>Quote within 24 hours. Pickup typically within a week or two, depending on your location and schedule. We're flexible.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What about compliance documentation?</h4>
+                    <p>Certificate of Destruction with serial numbers, destruction method, date, and technician. Plus Certificate of Recycling and chain of custody reports. All included.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Do you pick up nationwide?</h4>
+                    <p>Yes. All 50 states. We have coverage across the country with regional partners who meet our R2v3 standards when needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Clear Out the Old Stuff?</h2>
+                <p class="cta-subtitle">5 minutes to fill out the form. 24 hours for a quote. Free pickup for qualifying equipment.</p>
+                
+                <div class="cta-buttons">
+                    <a href="/#quote" class="cta-btn-primary">
+                        Get Your Free Quote
+                        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                    </a>
+                    <a href="tel:4045006057" class="cta-btn-secondary">Call (404) 500-6057</a>
+                </div>
+
+                <div class="cta-promise">
+                    <span>
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        Free quote in 24 hours
+                    </span>
+                    <span>
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        No hidden fees
+                    </span>
+                    <span>
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        COD included
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="https://github.com/Ajwad-Uddin/ecos-site/blob/main/LogoWhite1.png?raw=true" alt="ECOS Technologies" style="height: 40px;">
+                    <p>ECOS Technologies provides certified IT asset disposition, data destruction, and electronics recycling services nationwide. R2v3 and ISO certified—in the top 6% of ITAD providers nationally.</p>
+                    <div class="footer-certs">
+                        <span class="footer-cert-badge">R2v3 Certified</span>
+                        <span class="footer-cert-badge">ISO 9001</span>
+                        <span class="footer-cert-badge">ISO 14001</span>
+                        <span class="footer-cert-badge">ISO 45001</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="/services#itad">IT Asset Disposition</a></li>
+                        <li><a href="/services#data-destruction">Data Destruction</a></li>
+                        <li><a href="/services#recycling">Electronics Recycling</a></li>
+                        <li><a href="/services#decommissioning">Data Center Decommissioning</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5>Industries</h5>
+                    <ul class="footer-links">
+                        <li><a href="/industries#healthcare">Healthcare</a></li>
+                        <li><a href="/industries#financial">Financial Services</a></li>
+                        <li><a href="/industries#education">Education</a></li>
+                        <li><a href="/industries#government">Government</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5>Contact</h5>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <span>4761 Hugh Howell Road<br>Tucker, GA 30084</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        <span>(404) 500-6057</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <span><a href="/cdn-cgi/l/email-protection#6112000d04122104020e1213040218020d04124f020e0c"><span class="__cf_email__" data-cfemail="5427353831271431373b272631372d373831277a373b39">[email&#160;protected]</span></a></span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        <span>Mon–Fri: 9am–5pm EST</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2025 ECOS Technologies. All rights reserved.</span>
+ 
